@@ -1,1 +1,282 @@
-IyBBZ2VudCBBUEkgV3JhcHBlcnMKCj4g5oqK5YWo5LiW55WM55qE572R56uZ5ZKMIEFQUCDlj5jmiJAgQWdlbnQg5Y+v55So55qEIEFQSQoKW0VuZ2xpc2ggUkVBRE1FXSguL1JFQURNRV9FTi5tZCkKCi0tLQoKIyMg8J+MnyDmhL/mma8KCioqMTDlubTlkI7vvIw4MCXnmoRBUFDkvJrmtojlpLHvvIzlroPku6zlj6rpnIDopoHku6XkuIDkuKpBUEnnmoTlvaLlvI/lrZjlnKjjgIIqKgoK5b2TQUkgQWdlbnTmiJDkuLrkuLvmtYHkuqTkupLmlrnlvI/vvIzkurrnsbvkuI3lho3miYvliqjngrnlvIDkuIDkuKrkuKpBUFDvvIzogIzmmK/pgJrov4foh6rnhLbor63oqIDorqlBZ2VudOWujOaIkOS7u+WKoeOAguS9humXrumimOaYr+KAlOKAlCoq546w5Zyo55qE5LqS6IGU572R5bm25LiN5piv5Li6QWdlbnTorr7orqHnmoQqKuOAggoKLSDmg7PorqLnpajvvJ/msqHmnInnu5/kuIDnmoTngavovabnpagv5py656WoQVBJCi0g5oOz6LSt54mp77yf5q+P5Liq55S15ZWG5bmz5Y+w6YO95pyJ6Ieq5bex55qE5bCB6Zet5o6l5Y+jCi0g5oOz5p+l5L+h5oGv77yf572R56uZ5Y+N54is44CB6aqM6K+B56CB44CB5Yqo5oCB5Yqg6L295bGC5bGC6Zi756KNCi0g5oOz6Ieq5Yqo5YyW77yf5q+P5Liq572R56uZ6YO96KaB6YeN5paw5YaZ5LiA5aWX54is6JmrCgrmnKzpobnnm67ml6jlnKgqKuW7uueri+S4gOWll+W8gOaUvuOAgeagh+WHhuWMlueahOe9keermemAhuWQkeWSjOa1j+iniOWZqOiHquWKqOWMluaWueahiCoq77yM6K6p5byA5Y+R6ICF5Y+v5Lul77yaCjEuIOW/q+mAn+WwhuS7u+S9lee9keermeWwgeijheaIkOe7k+aehOWMlkFQSQoyLiDlpI3nlKjnpL7ljLrotKHnjK7nmoTnjrDmiJDmlrnmoYgKMy4g5Li6QUkgQWdlbnTmj5Dkvpvlj6/pnaDjgIHnu5/kuIDnmoTmnI3liqHmjqXlj6MKCi0tLQoKIyMg8J+agCDlv6vpgJ/lvIDlp4sKCmBgYGJhc2gKIyDlhYvpmobku5PlupMKZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9EYXlEcmVhbW15L2FnZW50LWFwaS13cmFwcGVycy5naXQKY2QgYWdlbnQtYXBpLXdyYXBwZXJzCgojIOWuieijheS+nei1lgpwaXAgaW5zdGFsbCAtciByZXF1aXJlbWVudHMudHh0CgojIOafpeeci+ekuuS+iwpweXRob24gZXhhbXBsZXMvY3RyaXBfZmxpZ2h0X3NlYXJjaC5weQpgYGAKCi0tLQoKIyMg8J+TgSDpobnnm67nu5PmnoQKCmBgYAphZ2VudC1hcGktd3JhcHBlcnMvCuKUnOKUgOKUgCBwcm92aWRlcnMvICAgICAgICAgICAgICAjIOWQhOe9keermS9BUFDnmoTlsIHoo4XmlrnmoYgK4pSCICAg4pSc4pSA4pSAIGN0cmlwLyAgICAgICAgICAgICAjIOaQuueoiwrilIIgICDilJzilIDilIAgMTIzMDYvICAgICAgICAgICAgICMg6ZOB6LevMTIzMDYK4pSCICAg4pSc4pSA4pSAIHRhb2Jhby8gICAgICAgICAgICAjIOa3mOWunQrilIIgICDilJTilIDilIAgdGVtcGxhdGUvICAgICAgICAgICMg5paw5aKecHJvdmlkZXLnmoTmqKHmnb8K4pSc4pSA4pSAIGRvY3MvICAgICAgICAgICAgICAgICAgICMg5paH5qGjCuKUgiAgIOKUnOKUgOKUgCBhcmNoaXRlY3R1cmUubWQgICAgIyDmnrbmnoTorr7orqEK4pSCICAg4pSc4pSA4pSAIGNvbnRyaWJ1dGlvbi5tZCAgICAjIOi0oeeMruaMh+WNlwrilIIgICDilJTilIDilIAgYmVzdC1wcmFjdGljZXMubWQgICMg5pyA5L2z5a6e6Le1CuKUnOKUgOKUgCBleGFtcGxlcy8gICAgICAgICAgICAgICAjIOS9v+eUqOekuuS+iwrilJzilIDilIAgdGVzdHMvICAgICAgICAgICAgICAgICAgIyDmtYvor5XnlKjkvosK4pSc4pSA4pSAIGNvcmUvICAgICAgICAgICAgICAgICAgICMg5qC45b+D5qGG5p62CuKUgiAgIOKUnOKUgOKUgCBicm93c2VyLnB5ICAgICAgICAgIyDmtY/op4jlmajlsIHoo4UK4pSCICAg4pSc4pSA4pSAIGNhcHRjaGEucHkgICAgICAgICAjIOmqjOivgeeggeWkhOeQhgrilIIgICDilJTilIDilIAgcHJveHkucHkgICAgICAgICAgICMg5Luj55CG566h55CGCuKUlOKUgOKUgCBSRUFETUUubWQKYGBgCgotLS0KCiMjIPCfj5fvuI8g5p625p6E6K6+6K6hCgojIyMg5qC45b+D5oCd5oOzCgrmr4/kuKrnvZHnq5nnmoTlsIHoo4XmlrnmoYjvvIhQcm92aWRlcu+8iemBteW+que7n+S4gOaOpeWPo++8mgoKYGBgcHl0aG9uCmZyb20gY29yZSBpbXBvcnQgQmFzZVByb3ZpZGVyCgpjbGFzcyBDdHJpcFByb3ZpZGVyKEJhc2VQcm92aWRlcik6CiAgICAiIiLmkLrnqItQcm92aWRlcuekuuS+iyIiIgogICAgCiAgICBuYW1lID0gImN0cmlwIgogICAgdmVyc2lvbiA9ICIxLjAuMCIKICAgIAogICAgYXN5bmMgZGVmIHNlYXJjaF9mbGlnaHRzKHNlbGYsIG9yaWdpbiwgZGVzdCwgZGF0ZSwgKiprd2FyZ3MpOgogICAgICAgICIiIuaQnOe0ouiIquePrSIiIgogICAgICAgICMgMS4g5omT5byA6aG16Z2iCiAgICAgICAgIyAyLiDloavlhpnooajljZUKICAgICAgICAjIDMuIOiOt+WPlue7k+aenAogICAgICAgICMgNC4g6L+U5Zue57uT5p6E5YyW5pWw5o2uCiAgICAgICAgcGFzcwogICAgCiAgICBhc3luYyBkZWYgYm9va19mbGlnaHQoc2VsZiwgZmxpZ2h0X2lkLCBwYXNzZW5nZXJfaW5mbyk6CiAgICAgICAgIiIi6aKE6K6i6Iiq54+tIiIiCiAgICAgICAgcGFzcwpgYGAKCiMjIyDliIblsYLmnrbmnoQKCmBgYArilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICAgICAgICAgICBBZ2VudCAvIOS4iuWxguW6lOeUqCAgICAgICAgICAgIOKUggrilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgK4pSCICAgICAgICAgICAgIOKUgiBSRVNUIEFQSSAvIFB5dGhvbiBTREsK4pSc4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pa84pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSkCuKUgiAgICAgIFByb3ZpZGVyIFJlZ2lzdHJ5ICAgICAgICAgICAgICDilIIK4pSCICAgICAgKOe7n+S4gOaOpeWPo+OAgei3r+eUseWIhuWPkSkgICAgICAgICAgICAgIOKUggrilJzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKQK4pSCICAgICAgICAgICAgIOKUgiBQcm92aWRlciBBUEkK4pSc4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pa84pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSkCuKUgiAg4pSM4pSA4pSA4pSA4pSA4pSA4pSQIOKUjOKUgOKUgOKUgOKUgOKUgOKUkCDilIzilIDilIDilIDilIDilIDilJAg4pSM4pSA4pSA4pSA4pSA4pSA4pSQICAg4pSCCuKUgiAg4pSC5pC656iLICDilIIg4pSCMTIzMDbilIIg4pSC5reY5a6dICDilIIg4pSC5YW25LuWICDilIIgIOKUggrilIIgIOKUgkN0cmlw4pSCIOKUgiAgICAg4pSCIOKUgiAgICAg4pSCIOKUgiAgICAg4pSCICDilIIK4pSCICDilJTilIDilIDilKzilIDilIDilJgg4pSU4pSA4pSA4pSs4pSA4pSA4pSYIOKUlOKUgOKUgOKUrOKUgOKUgOKUmCDilJTilIDilIDilKzilIDilIDilJggICDilIIK4pSCICAgICDilJTilIDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilJggICAgICDilIIK4pSCICAgICAgICBQcm92aWRlciDlsYIgICAgICAgICAgICAgICAgICDilIIK4pSc4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSkCuKUgiAg4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQICAg4pSCCuKUgiAg4pSCICAgIEJyb3dzZXIgQXV0b21hdGlvbiAgICAgICDilIIgICDilIIK4pSCICDilIIgIChQbGF5d3JpZ2h0IC8gU2VsZW5pdW0pICAgIOKUgiAgIOKUggrilIIgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmCAgIOKUggrilJzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKQK4pSCICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAg4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQICAgICAgICAgICDilIIK4pSCICDilIIgQ2FwdGNoYSDilIIg4pSCIFByb3h5ICAg4pSCICAgICAgICAgICDilIIK4pSCICDilIIgU29sdmVyICDilIIg4pSCIFBvb2wgICAg4pSCICAgICAgICAgICDilIIK4pSCICDilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYICAgICAgICAgICDilIIK4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYCmBgYAoKLS0tCgojIyDwn5ug77iPIOW3suaUr+aMgeeahFByb3ZpZGVyCgp8IOW5s+WPsCB8IOWKn+iDvSB8IOeKtuaAgSB8IOi0oeeMruiAhSB8CnwtLS0tLS18LS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwKfCDmkLrnqIsgKEN0cmlwKSB8IOacuuelqOaQnOe0oiB8IOKchSDlj6/nlKggfCBARGF5RHJlYW1teSB8Cnwg5pC656iLIChDdHJpcCkgfCDphZLlupfmkJzntKIgfCDwn5qnIOW8gOWPkeS4rSB8IC0gfAp8IDEyMzA2IHwg54Gr6L2m56Wo5p+l6K+iIHwg8J+TiyDorqHliJLkuK0gfCAtIHwKfCDmt5jlrp0gfCDllYblk4HmkJzntKIgfCDwn5OLIOiuoeWIkuS4rSB8IC0gfAoKLS0tCgojIyDwn6SdIOWmguS9lei0oeeMrgoKIyMjIOi0oeeMruS4gOS4quaWsOeahFByb3ZpZGVyCgoxLiAqKkZvcmsg5LuT5bqTKioKCjIuICoq5aSN5Yi25qih5p2/KioKICAgYGBgYmFzaAogICBjcCAtciBwcm92aWRlcnMvdGVtcGxhdGUgcHJvdmlkZXJzL3lvdXJfcHJvdmlkZXIKICAgYGBgCgozLiAqKuWunueOsOaguOW/g+aOpeWPoyoqCiAgIC0g57un5om/IGBCYXNlUHJvdmlkZXJgCiAgIC0g5a6e546w5b+F6KaB55qE5pa55rOVCiAgIC0g5re75Yqg5rWL6K+V55So5L6LCgo0LiAqKuaPkOS6pFBSKioKICAgLSDmj4/ov7DkvaDop6PlhrPnmoTpl67popgKICAgLSDmj5Dkvpvkvb/nlKjnpLrkvosKICAgLSDor7TmmI7lt7Lnn6XpmZDliLYKCiMjIyBQcm92aWRlcuW8gOWPkeinhOiMgwoKYGBgcHl0aG9uCiMgcHJvdmlkZXJzL2V4YW1wbGUvcHJvdmlkZXIucHkKCmNsYXNzIEV4YW1wbGVQcm92aWRlcihCYXNlUHJvdmlkZXIpOgogICAgIiIiCiAgICDnpLrkvotQcm92aWRlcgogICAgCiAgICDlip/og73vvJpYWFjnvZHnq5nnmoRYWFjlip/og70KICAgIOmZkOWItu+8mumcgOimgeeZu+W9leOAgeaciemqjOivgeeggeetiQogICAgIiIiCiAgICAKICAgIG5hbWUgPSAiZXhhbXBsZSIKICAgIHZlcnNpb24gPSAiMS4wLjAiCiAgICBhdXRob3IgPSAiQHlvdXJfZ2l0aHViIgogICAgCiAgICAjIOW/heimgemFjee9rgogICAgcmVxdWlyZWRfY29uZmlnID0gWyJ1c2VybmFtZSIsICJwYXNzd29yZCJdICAjIOWmguaenOmcgOimgeeZu+W9lQogICAgCiAgICBhc3luYyBkZWYgbG9naW4oc2VsZiwgdXNlcm5hbWUsIHBhc3N3b3JkKToKICAgICAgICAiIiLnmbvlvZXvvIjlpoLmnpzpnIDopoHvvIkiIiIKICAgICAgICBwYXNzCiAgICAKICAgIGFzeW5jIGRlZiBzZWFyY2goc2VsZiwgcXVlcnksICoqa3dhcmdzKToKICAgICAgICAiIiIKICAgICAgICDmkJzntKLlip/og70KICAgICAgICAKICAgICAgICBSZXR1cm5zOgogICAgICAgICAgICBMaXN0W0RpY3RdOiDnu5PmnoTljJbnu5PmnpwKICAgICAgICAiIiIKICAgICAgICBwYXNzCmBgYAoKIyMjIOaWh+aho+imgeaxggoK5q+P5LiqUHJvdmlkZXLpnIDopoHljIXlkKvvvJoKLSBgUkVBRE1FLm1kYDog5Yqf6IO96K+05piO44CB5L2/55So5pa55rOV44CB5rOo5oSP5LqL6aG5Ci0gYHJlcXVpcmVtZW50cy50eHRgOiDkvp3otZYKLSBgZXhhbXBsZXMvYDog5L2/55So56S65L6LCi0gYHRlc3RzL2A6IOWNleWFg+a1i+ivlQoKLS0tCgojIyDwn5OWIOekuuS+i++8muaQuueoi+acuuelqOaQnOe0ogoKYGBgcHl0aG9uCmltcG9ydCBhc3luY2lvCmZyb20gcHJvdmlkZXJzLmN0cmlwIGltcG9ydCBDdHJpcFByb3ZpZGVyCgphc3luYyBkZWYgbWFpbigpOgogICAgIyDliJ3lp4vljJZQcm92aWRlcgogICAgY3RyaXAgPSBDdHJpcFByb3ZpZGVyKCkKICAgIAogICAgIyDmkJzntKLoiKrnj60KICAgIGZsaWdodHMgPSBhd2FpdCBjdHJpcC5zZWFyY2hfZmxpZ2h0cygKICAgICAgICBvcmlnaW49IlNIQSIsICAgICAgICAjIOS4iua1twogICAgICAgIGRlc3RpbmF0aW9uPSJQRUsiLCAgICMg5YyX5LqsCiAgICAgICAgZGF0ZT0iMjAyNi0wMy0wMSIKICAgICkKICAgIAogICAgIyDmiZPljbDnu5PmnpwKICAgIGZvciBmbGlnaHQgaW4gZmxpZ2h0czoKICAgICAgICBwcmludChmIntmbGlnaHRbJ2FpcmxpbmUnXX0ge2ZsaWdodFsnZmxpZ2h0X25vJ119IikKICAgICAgICBwcmludChmIiAg5Ye65Y+ROiB7ZmxpZ2h0WydkZXBfdGltZSddfSIpCiAgICAgICAgcHJpbnQoZiIgIOWIsOi+vjoge2ZsaWdodFsnYXJyX3RpbWUnXX0iKQogICAgICAgIHByaW50KGYiICDku7fmoLw6IMKle2ZsaWdodFsncHJpY2UnXX0iKQogICAgICAgIHByaW50KCkKCmFzeW5jaW8ucnVuKG1haW4oKSkKYGBgCgotLS0KCiMjIPCfjq8g6Lev57q/5Zu+CgojIyMgUGhhc2UgMTog5Z+656GA6K6+5pa9ICjov5vooYzkuK0pCi0gW3hdIOmhueebruWIneWni+WMlgotIFt4XSDmoLjlv4PmoYbmnrborr7orqEKLSBbeF0g5pC656iL5py656WoUHJvdmlkZXIKLSBbIF0gMTIzMDbngavovabnpahQcm92aWRlcgotIFsgXSDpqozor4HnoIHlpITnkIbmqKHlnZcKCiMjIyBQaGFzZSAyOiDnlJ/mgIHlu7rorr4KLSBbIF0gUHJvdmlkZXLms6jlhozkuK3lv4MKLSBbIF0gUkVTVCBBUEnmnI3liqEKLSBbIF0gU0RL5Y+R5biDIChQeXRob24vTm9kZS5qcykKLSBbIF0g5paH5qGj572R56uZCgojIyMgUGhhc2UgMzog6KeE5qih5YyWCi0gWyBdIOekvuWMuui0oeeMruaMh+WNl+WujOWWhAotIFsgXSDoh6rliqjljJbmtYvor5XkvZPns7sKLSBbIF0g5LqR5pyN5Yqh5omY566hCi0gWyBdIOabtOWkmlByb3ZpZGVy6KaG55uWCgotLS0KCiMjIOKaoO+4jyDlhY3otKPlo7DmmI4KCuacrOmhueebruS7heS+m+WtpuS5oOWSjOeglOeptuS9v+eUqOOAguS9v+eUqOacrOmhueebruaXtuivt+mBteWuiO+8mgoxLiDnm7jlhbPnvZHnq5nnmoTmnI3liqHmnaHmrL4KMi4g5b2T5Zyw55qE5rOV5b6L5rOV6KeECjMuIOS4jei/m+ihjOWkp+inhOaooeaVsOaNruaKk+WPlgo0LiDkuI3nlKjkuo7llYbkuJrniZ/liKkKCi0tLQoKIyMg8J+SrCDliqDlhaXorqjorroKCi0gKipJc3N1ZXMqKjog5o+Q5Ye66ZyA5rGC5oiW5oql5ZGK6Zeu6aKYCi0gKipEaXNjdXNzaW9ucyoqOiDmioDmnK/orqjorrrlkozmg7Pms5XkuqTmtYEKLSAqKlBSKio6IOi0oeeMruS9oOeahFByb3ZpZGVyCgotLS0KCiMjIPCfk4Qg6K645Y+v6K+BCgpNSVQgTGljZW5zZSAtIOivpuingSBbTElDRU5TRV0oLi9MSUNFTlNFKQoKLS0tCgoqKuiuqeaIkeS7rOS4gOi1t++8jOS4ukFnZW505pe25Luj5p6E5bu65Z+656GA6K6+5pa977yBKiog8J+agAo=
+# Agent API Wrappers
+
+> 把全世界的网站和 APP 变成 Agent 可用的 API
+
+[English README](./README_EN.md)
+
+---
+
+## 🌟 愿景
+
+**10年后，80%的APP会消失，它们只需要以一个API的形式存在。**
+
+当AI Agent成为主流交互方式，人类不再手动点开一个个APP，而是通过自然语言让Agent完成任务。但问题是——**现在的互联网并不是为Agent设计的**。
+
+- 想订票？没有统一的火车票/机票API
+- 想购物？每个电商平台都有自己的封闭接口
+- 想查信息？网站反爬、验证码、动态加载层层阻碍
+- 想自动化？每个网站都要重新写一套爬虫
+
+本项目旨在**建立一套开放、标准化的网站逆向和浏览器自动化方案**，让开发者可以：
+1. 快速将任何网站封装成结构化API
+2. 复用社区贡献的现成方案
+3. 为AI Agent提供可靠、统一的服务接口
+
+---
+
+## 🚀 快速开始
+
+```bash
+# 克隆仓库
+git clone https://github.com/DayDreammy/agent-api-wrappers.git
+cd agent-api-wrappers
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 查看示例
+python examples/ctrip_flight_search.py
+```
+
+---
+
+## 📁 项目结构
+
+```
+agent-api-wrappers/
+├── providers/              # 各网站/APP的封装方案
+│   ├── ctrip/             # 携程
+│   ├── 12306/             # 铁路12306
+│   ├── taobao/            # 淘宝
+│   └── template/          # 新增provider的模板
+├── docs/                   # 文档
+│   ├── architecture.md    # 架构设计
+│   ├── contribution.md    # 贡献指南
+│   └── best-practices.md  # 最佳实践
+├── examples/               # 使用示例
+├── tests/                  # 测试用例
+├── core/                   # 核心框架
+│   ├── browser.py         # 浏览器封装
+│   ├── captcha.py         # 验证码处理
+│   └── proxy.py           # 代理管理
+└── README.md
+```
+
+---
+
+## 🏗️ 架构设计
+
+### 核心思想
+
+每个网站的封装方案（Provider）遵循统一接口：
+
+```python
+from core import BaseProvider
+
+class CtripProvider(BaseProvider):
+    """携程Provider示例"""
+    
+    name = "ctrip"
+    version = "1.0.0"
+    
+    async def search_flights(self, origin, dest, date, **kwargs):
+        """搜索航班"""
+        # 1. 打开页面
+        # 2. 填写表单
+        # 3. 获取结果
+        # 4. 返回结构化数据
+        pass
+    
+    async def book_flight(self, flight_id, passenger_info):
+        """预订航班"""
+        pass
+```
+
+### 分层架构
+
+```
+┌─────────────────────────────────────┐
+│           Agent / 上层应用            │
+└─────────────┬───────────────────────┘
+│             │ REST API / Python SDK
+├─────────────▼───────────────────────┤
+│      Provider Registry              │
+│      (统一接口、路由分发)              │
+├─────────────┬───────────────────────┤
+│             │ Provider API
+├─────────────▼───────────────────────┤
+│  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐   │
+│  │携程  │ │12306│ │淘宝  │ │其他  │  │
+│  │Ctrip│ │     │ │     │ │     │  │
+│  └──┬──┘ └──┬──┘ └──┬──┘ └──┬──┘   │
+│     └───────┴───────┴───────┘      │
+│        Provider 层                  │
+├─────────────────────────────────────┤
+│  ┌─────────────────────────────┐   │
+│  │    Browser Automation       │   │
+│  │  (Playwright / Selenium)    │   │
+│  └─────────────────────────────┘   │
+├─────────────────────────────────────┤
+│  ┌─────────┐ ┌─────────┐           │
+│  │ Captcha │ │ Proxy   │           │
+│  │ Solver  │ │ Pool    │           │
+│  └─────────┘ └─────────┘           │
+└─────────────────────────────────────┘
+```
+
+---
+
+## 🛠️ 已支持的Provider
+
+| 平台 | 功能 | 状态 | 贡献者 |
+|------|------|------|--------|
+| 携程 (Ctrip) | 机票搜索 | ✅ 可用 | @DayDreammy |
+| 携程 (Ctrip) | 酒店搜索 | 🚧 开发中 | - |
+| 12306 | 火车票查询 | 📋 计划中 | - |
+| 淘宝 | 商品搜索 | 📋 计划中 | - |
+
+---
+
+## 🤝 如何贡献
+
+### 贡献一个新的Provider
+
+1. **Fork 仓库**
+
+2. **复制模板**
+   ```bash
+   cp -r providers/template providers/your_provider
+   ```
+
+3. **实现核心接口**
+   - 继承 `BaseProvider`
+   - 实现必要的方法
+   - 添加测试用例
+
+4. **提交PR**
+   - 描述你解决的问题
+   - 提供使用示例
+   - 说明已知限制
+
+### Provider开发规范
+
+```python
+# providers/example/provider.py
+
+class ExampleProvider(BaseProvider):
+    """
+    示例Provider
+    
+    功能：XXX网站的XXX功能
+    限制：需要登录、有验证码等
+    """
+    
+    name = "example"
+    version = "1.0.0"
+    author = "@your_github"
+    
+    # 必要配置
+    required_config = ["username", "password"]  # 如果需要登录
+    
+    async def login(self, username, password):
+        """登录（如果需要）"""
+        pass
+    
+    async def search(self, query, **kwargs):
+        """
+        搜索功能
+        
+        Returns:
+            List[Dict]: 结构化结果
+        """
+        pass
+```
+
+### 文档要求
+
+每个Provider需要包含：
+- `README.md`: 功能说明、使用方法、注意事项
+- `requirements.txt`: 依赖
+- `examples/`: 使用示例
+- `tests/`: 单元测试
+
+---
+
+## 📖 示例：携程机票搜索
+
+```python
+import asyncio
+from providers.ctrip import CtripProvider
+
+async def main():
+    # 初始化Provider
+    ctrip = CtripProvider()
+    
+    # 搜索航班
+    flights = await ctrip.search_flights(
+        origin="SHA",        # 上海
+        destination="PEK",   # 北京
+        date="2026-03-01"
+    )
+    
+    # 打印结果
+    for flight in flights:
+        print(f"{flight[airline]} {flight[flight_no]}")
+        print(f"  出发: {flight[dep_time]}")
+        print(f"  到达: {flight[arr_time]}")
+        print(f"  价格: ¥{flight[price]}")
+        print()
+
+asyncio.run(main())
+```
+
+---
+
+## 🎯 路线图
+
+### Phase 1: 基础设施 (进行中)
+- [x] 项目初始化
+- [x] 核心框架设计
+- [x] 携程机票Provider
+- [ ] 12306火车票Provider
+- [ ] 验证码处理模块
+
+### Phase 2: 生态建设
+- [ ] Provider注册中心
+- [ ] REST API服务
+- [ ] SDK发布 (Python/Node.js)
+- [ ] 文档网站
+
+### Phase 3: 规模化
+- [ ] 社区贡献指南完善
+- [ ] 自动化测试体系
+- [ ] 云服务托管
+- [ ] 更多Provider覆盖
+
+---
+
+## ⚠️ 免责声明
+
+本项目仅供学习和研究使用。使用本项目时请遵守：
+1. 相关网站的服务条款
+2. 当地的法律法规
+3. 不进行大规模数据抓取
+4. 不用于商业牟利
+
+---
+
+## 💬 加入讨论
+
+- **Issues**: 提出需求或报告问题
+- **Discussions**: 技术讨论和想法交流
+- **PR**: 贡献你的Provider
+
+---
+
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](./LICENSE)
+
+---
+
+**让我们一起，为Agent时代构建基础设施！** 🚀

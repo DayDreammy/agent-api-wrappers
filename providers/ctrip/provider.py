@@ -1,1 +1,208 @@
-IiIiCkN0cmlwICjmkLrnqIspIFByb3ZpZGVyCgpQcm92aWRlcyBmbGlnaHQgYW5kIGhvdGVsIHNlYXJjaCBjYXBhYmlsaXRpZXMgZm9yIEN0cmlwLmNvbQoiIiIKCmltcG9ydCBhc3luY2lvCmZyb20gZGF0ZXRpbWUgaW1wb3J0IGRhdGV0aW1lCmZyb20gdHlwaW5nIGltcG9ydCBMaXN0LCBEaWN0LCBBbnksIE9wdGlvbmFsCmZyb20gY29yZS5iYXNlIGltcG9ydCBCYXNlUHJvdmlkZXIKCgpjbGFzcyBDdHJpcFByb3ZpZGVyKEJhc2VQcm92aWRlcik6CiAgICAiIiIKICAgIEN0cmlwIEFQSSBQcm92aWRlcgogICAgCiAgICBGZWF0dXJlczoKICAgIC0gRmxpZ2h0IHNlYXJjaAogICAgLSBIb3RlbCBzZWFyY2ggKHBsYW5uZWQpCiAgICAKICAgIExpbWl0YXRpb25zOgogICAgLSBObyBib29raW5nIGNhcGFiaWxpdHkgKHJlYWQtb25seSkKICAgIC0gTWF5IHJlcXVpcmUgaGFuZGxpbmcgYW50aS1ib3QgbWVhc3VyZXMKICAgICIiIgogICAgCiAgICBuYW1lID0gImN0cmlwIgogICAgdmVyc2lvbiA9ICIxLjAuMCIKICAgIGF1dGhvciA9ICJARGF5RHJlYW1teSIKICAgIHJlcXVpcmVkX2NvbmZpZyA9IFtdICAjIE5vIGxvZ2luIHJlcXVpcmVkIGZvciBzZWFyY2gKICAgIAogICAgQkFTRV9VUkwgPSAiaHR0cHM6Ly93d3cuY3RyaXAuY29tIgogICAgRkxJR0hUX1NFQVJDSF9VUkwgPSAiaHR0cHM6Ly9mbGlnaHRzLmN0cmlwLmNvbS9vbmxpbmUvY2hhbm5lbC9kb21lc3RpYyIKICAgIAogICAgZGVmIF9faW5pdF9fKHNlbGYsIGNvbmZpZzogT3B0aW9uYWxbRGljdFtzdHIsIEFueV1dID0gTm9uZSk6CiAgICAgICAgc3VwZXIoKS5fX2luaXRfXyhjb25maWcpCiAgICAgICAgc2VsZi5fcGxheXdyaWdodCA9IE5vbmUKICAgICAgICBzZWxmLl9icm93c2VyID0gTm9uZQogICAgICAgIHNlbGYuX3BhZ2UgPSBOb25lCiAgICAKICAgIGFzeW5jIGRlZiBfaW5pdF9icm93c2VyKHNlbGYpOgogICAgICAgICIiIkluaXRpYWxpemUgYnJvd3NlciBpZiBub3QgYWxyZWFkeSBkb25lLiIiIgogICAgICAgIGlmIHNlbGYuX3BhZ2UgaXMgTm9uZToKICAgICAgICAgICAgZnJvbSBwbGF5d3JpZ2h0LmFzeW5jX2FwaSBpbXBvcnQgYXN5bmNfcGxheXdyaWdodAogICAgICAgICAgICAKICAgICAgICAgICAgc2VsZi5fcGxheXdyaWdodCA9IGF3YWl0IGFzeW5jX3BsYXl3cmlnaHQoKS5zdGFydCgpCiAgICAgICAgICAgIHNlbGYuX2Jyb3dzZXIgPSBhd2FpdCBzZWxmLl9wbGF5d3JpZ2h0LmNocm9taXVtLmxhdW5jaCgKICAgICAgICAgICAgICAgIGhlYWRsZXNzPVRydWUsCiAgICAgICAgICAgICAgICBhcmdzPVsnLS1uby1zYW5kYm94JywgJy0tZGlzYWJsZS1kZXYtc2htLXVzYWdlJ10KICAgICAgICAgICAgKQogICAgICAgICAgICBzZWxmLl9wYWdlID0gYXdhaXQgc2VsZi5fYnJvd3Nlci5uZXdfcGFnZSgpCiAgICAgICAgICAgIGF3YWl0IHNlbGYuX3BhZ2Uuc2V0X3ZpZXdwb3J0X3NpemUoeyJ3aWR0aCI6IDE5MjAsICJoZWlnaHQiOiAxMDgwfSkKICAgIAogICAgYXN5bmMgZGVmIGNsb3NlKHNlbGYpOgogICAgICAgICIiIkNsZWFuIHVwIGJyb3dzZXIgcmVzb3VyY2VzLiIiIgogICAgICAgIGlmIHNlbGYuX3BhZ2U6CiAgICAgICAgICAgIGF3YWl0IHNlbGYuX3BhZ2UuY2xvc2UoKQogICAgICAgIGlmIHNlbGYuX2Jyb3dzZXI6CiAgICAgICAgICAgIGF3YWl0IHNlbGYuX2Jyb3dzZXIuY2xvc2UoKQogICAgICAgIGlmIHNlbGYuX3BsYXl3cmlnaHQ6CiAgICAgICAgICAgIGF3YWl0IHNlbGYuX3BsYXl3cmlnaHQuc3RvcCgpCiAgICAKICAgIGFzeW5jIGRlZiBoZWFsdGhfY2hlY2soc2VsZikgLT4gYm9vbDoKICAgICAgICAiIiJDaGVjayBpZiBDdHJpcCBpcyBhY2Nlc3NpYmxlLiIiIgogICAgICAgIHRyeToKICAgICAgICAgICAgYXdhaXQgc2VsZi5faW5pdF9icm93c2VyKCkKICAgICAgICAgICAgYXdhaXQgc2VsZi5fcGFnZS5nb3RvKHNlbGYuQkFTRV9VUkwsIHdhaXRfdW50aWw9Im5ldHdvcmtpZGxlIikKICAgICAgICAgICAgcmV0dXJuICJjdHJpcCIgaW4gYXdhaXQgc2VsZi5fcGFnZS50aXRsZSgpLmxvd2VyKCkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICByZXR1cm4gRmFsc2UKICAgIAogICAgYXN5bmMgZGVmIHNlYXJjaF9mbGlnaHRzKAogICAgICAgIHNlbGYsCiAgICAgICAgb3JpZ2luOiBzdHIsCiAgICAgICAgZGVzdGluYXRpb246IHN0ciwKICAgICAgICBkYXRlOiBzdHIsCiAgICAgICAgKiprd2FyZ3MKICAgICkgLT4gTGlzdFtEaWN0W3N0ciwgQW55XV06CiAgICAgICAgIiIiCiAgICAgICAgU2VhcmNoIGZvciBmbGlnaHRzIG9uIEN0cmlwLgogICAgICAgIAogICAgICAgIEFyZ3M6CiAgICAgICAgICAgIG9yaWdpbjogT3JpZ2luIGNpdHkgY29kZSAoZS5nLiwgIlNIQSIgZm9yIFNoYW5naGFpKQogICAgICAgICAgICBkZXN0aW5hdGlvbjogRGVzdGluYXRpb24gY2l0eSBjb2RlIChlLmcuLCAiUEVLIiBmb3IgQmVpamluZykKICAgICAgICAgICAgZGF0ZTogRGVwYXJ0dXJlIGRhdGUgaW4gWVlZWS1NTS1ERCBmb3JtYXQKICAgICAgICAgICAgKiprd2FyZ3M6IEFkZGl0aW9uYWwgc2VhcmNoIHBhcmFtZXRlcnMKICAgICAgICAgICAgICAgIC0gYWR1bHQ6IE51bWJlciBvZiBhZHVsdHMgKGRlZmF1bHQ6IDEpCiAgICAgICAgICAgICAgICAtIGNoaWxkOiBOdW1iZXIgb2YgY2hpbGRyZW4gKGRlZmF1bHQ6IDApCiAgICAgICAgCiAgICAgICAgUmV0dXJuczoKICAgICAgICAgICAgTGlzdCBvZiBmbGlnaHQgZGljdGlvbmFyaWVzIGNvbnRhaW5pbmc6CiAgICAgICAgICAgIC0gYWlybGluZTogQWlybGluZSBuYW1lCiAgICAgICAgICAgIC0gZmxpZ2h0X25vOiBGbGlnaHQgbnVtYmVyCiAgICAgICAgICAgIC0gZGVwX3RpbWU6IERlcGFydHVyZSB0aW1lCiAgICAgICAgICAgIC0gYXJyX3RpbWU6IEFycml2YWwgdGltZQogICAgICAgICAgICAtIGRlcF9haXJwb3J0OiBEZXBhcnR1cmUgYWlycG9ydAogICAgICAgICAgICAtIGFycl9haXJwb3J0OiBBcnJpdmFsIGFpcnBvcnQKICAgICAgICAgICAgLSBwcmljZTogUHJpY2UgaW4gQ05ZCiAgICAgICAgICAgIC0gZHVyYXRpb246IEZsaWdodCBkdXJhdGlvbgogICAgICAgIAogICAgICAgIEV4YW1wbGU6CiAgICAgICAgICAgID4+PiBwcm92aWRlciA9IEN0cmlwUHJvdmlkZXIoKQogICAgICAgICAgICA+Pj4gZmxpZ2h0cyA9IGF3YWl0IHByb3ZpZGVyLnNlYXJjaF9mbGlnaHRzKCJTSEEiLCAiUEVLIiwgIjIwMjYtMDMtMDEiKQogICAgICAgICAgICA+Pj4gcHJpbnQoZmxpZ2h0c1swXSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgJ2FpcmxpbmUnOiAnQ2hpbmEgRWFzdGVybicsCiAgICAgICAgICAgICAgICAnZmxpZ2h0X25vJzogJ01VNTEwMScsCiAgICAgICAgICAgICAgICAnZGVwX3RpbWUnOiAnMDg6MDAnLAogICAgICAgICAgICAgICAgJ2Fycl90aW1lJzogJzEwOjE1JywKICAgICAgICAgICAgICAgICdkZXBfYWlycG9ydCc6ICdTSEEnLAogICAgICAgICAgICAgICAgJ2Fycl9haXJwb3J0JzogJ1BFSycsCiAgICAgICAgICAgICAgICAncHJpY2UnOiA4NTAsCiAgICAgICAgICAgICAgICAnZHVyYXRpb24nOiAnMmggMTVtJwogICAgICAgICAgICB9CiAgICAgICAgIiIiCiAgICAgICAgYXdhaXQgc2VsZi5faW5pdF9icm93c2VyKCkKICAgICAgICAKICAgICAgICAjIEZvcm1hdCBkYXRlIGZvciBDdHJpcCBVUkwKICAgICAgICBkYXRlX29iaiA9IGRhdGV0aW1lLnN0cnB0aW1lKGRhdGUsICIlWS0lbS0lZCIpCiAgICAgICAgZGF0ZV9zdHIgPSBkYXRlX29iai5zdHJmdGltZSgiJVktJW0tJWQiKQogICAgICAgIAogICAgICAgICMgQnVpbGQgc2VhcmNoIFVSTAogICAgICAgIHNlYXJjaF91cmwgPSAoCiAgICAgICAgICAgIGYie3NlbGYuRkxJR0hUX1NFQVJDSF9VUkx9PyIKICAgICAgICAgICAgZiJkZXA9e29yaWdpbn0mYXJyPXtkZXN0aW5hdGlvbn0mZGVwRGF0ZT17ZGF0ZV9zdHJ9IgogICAgICAgICkKICAgICAgICAKICAgICAgICB0cnk6CiAgICAgICAgICAgICMgTmF2aWdhdGUgdG8gc2VhcmNoIHBhZ2UKICAgICAgICAgICAgYXdhaXQgc2VsZi5fcGFnZS5nb3RvKHNlYXJjaF91cmwsIHdhaXRfdW50aWw9Im5ldHdvcmtpZGxlIikKICAgICAgICAgICAgCiAgICAgICAgICAgICMgV2FpdCBmb3IgZmxpZ2h0IHJlc3VsdHMgdG8gbG9hZAogICAgICAgICAgICBhd2FpdCBzZWxmLl9wYWdlLndhaXRfZm9yX3NlbGVjdG9yKCIuZmxpZ2h0LWl0ZW0iLCB0aW1lb3V0PTMwMDAwKQogICAgICAgICAgICAKICAgICAgICAgICAgIyBFeHRyYWN0IGZsaWdodCBkYXRhCiAgICAgICAgICAgIGZsaWdodHMgPSBhd2FpdCBzZWxmLl9wYWdlLmV2YWx1YXRlKCIiIgogICAgICAgICAgICAgICAgKCkgPT4gewogICAgICAgICAgICAgICAgICAgIGNvbnN0IGZsaWdodHMgPSBbXTsKICAgICAgICAgICAgICAgICAgICBjb25zdCBpdGVtcyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJy5mbGlnaHQtaXRlbScpOwogICAgICAgICAgICAgICAgICAgIGl0ZW1zLmZvckVhY2goaXRlbSA9PiB7CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IGFpcmxpbmUgPSBpdGVtLnF1ZXJ5U2VsZWN0b3IoJy5haXJsaW5lLW5hbWUnKT8udGV4dENvbnRlbnQ/LnRyaW0oKTsKICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgZmxpZ2h0Tm8gPSBpdGVtLnF1ZXJ5U2VsZWN0b3IoJy5mbGlnaHQtbm8nKT8udGV4dENvbnRlbnQ/LnRyaW0oKTsKICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgZGVwVGltZSA9IGl0ZW0ucXVlcnlTZWxlY3RvcignLmRlcC10aW1lJyk/LnRleHRDb250ZW50Py50cmltKCk7CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IGFyclRpbWUgPSBpdGVtLnF1ZXJ5U2VsZWN0b3IoJy5hcnItdGltZScpPy50ZXh0Q29udGVudD8udHJpbSgpOwogICAgICAgICAgICAgICAgICAgICAgICBjb25zdCBkZXBBaXJwb3J0ID0gaXRlbS5xdWVyeVNlbGVjdG9yKCcuZGVwLWFpcnBvcnQnKT8udGV4dENvbnRlbnQ/LnRyaW0oKTsKICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgYXJyQWlycG9ydCA9IGl0ZW0ucXVlcnlTZWxlY3RvcignLmFyci1haXJwb3J0Jyk/LnRleHRDb250ZW50Py50cmltKCk7CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IHByaWNlVGV4dCA9IGl0ZW0ucXVlcnlTZWxlY3RvcignLnByaWNlJyk/LnRleHRDb250ZW50Py50cmltKCk7CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IGR1cmF0aW9uID0gaXRlbS5xdWVyeVNlbGVjdG9yKCcuZHVyYXRpb24nKT8udGV4dENvbnRlbnQ/LnRyaW0oKTsKICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIChhaXJsaW5lICYmIGZsaWdodE5vKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmbGlnaHRzLnB1c2goewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFpcmxpbmUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmxpZ2h0X25vOiBmbGlnaHRObywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXBfdGltZTogZGVwVGltZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBhcnJfdGltZTogYXJyVGltZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXBfYWlycG9ydDogZGVwQWlycG9ydCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBhcnJfYWlycG9ydDogYXJyQWlycG9ydCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmljZTogcGFyc2VJbnQocHJpY2VUZXh0Py5yZXBsYWNlKC9bXjAtOV0vZywgJycpIHx8IDApLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGR1cmF0aW9uCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICAgICAgICAgIHJldHVybiBmbGlnaHRzOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAiIiIpCiAgICAgICAgICAgIAogICAgICAgICAgICByZXR1cm4gZmxpZ2h0cwogICAgICAgICAgICAKICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgICMgVGFrZSBzY3JlZW5zaG90IGZvciBkZWJ1Z2dpbmcKICAgICAgICAgICAgYXdhaXQgc2VsZi5fcGFnZS5zY3JlZW5zaG90KHBhdGg9ZiJjdHJpcF9lcnJvcl97ZGF0ZXRpbWUubm93KCkuc3RyZnRpbWUoJyVZJW0lZF8lSCVNJVMnKX0ucG5nIikKICAgICAgICAgICAgcmFpc2UgRXhjZXB0aW9uKGYiRmFpbGVkIHRvIHNlYXJjaCBmbGlnaHRzOiB7c3RyKGUpfSIpCiAgICAKICAgIGFzeW5jIGRlZiBzZWFyY2hfaG90ZWxzKAogICAgICAgIHNlbGYsCiAgICAgICAgY2l0eTogc3RyLAogICAgICAgIGNoZWNraW46IHN0ciwKICAgICAgICBjaGVja291dDogc3RyLAogICAgICAgICoqa3dhcmdzCiAgICApIC0+IExpc3RbRGljdFtzdHIsIEFueV1dOgogICAgICAgICIiIgogICAgICAgIFNlYXJjaCBmb3IgaG90ZWxzIG9uIEN0cmlwLiAoUGxhbm5lZCBmZWF0dXJlKQogICAgICAgIAogICAgICAgIEFyZ3M6CiAgICAgICAgICAgIGNpdHk6IENpdHkgbmFtZSBvciBjb2RlCiAgICAgICAgICAgIGNoZWNraW46IENoZWNrLWluIGRhdGUgKFlZWVktTU0tREQpCiAgICAgICAgICAgIGNoZWNrb3V0OiBDaGVjay1vdXQgZGF0ZSAoWVlZWS1NTS1ERCkKICAgICAgICAKICAgICAgICBSZXR1cm5zOgogICAgICAgICAgICBMaXN0IG9mIGhvdGVsIGRpY3Rpb25hcmllcwogICAgICAgICIiIgogICAgICAgIHJhaXNlIE5vdEltcGxlbWVudGVkRXJyb3IoIkhvdGVsIHNlYXJjaCBpcyBwbGFubmVkIGJ1dCBub3QgeWV0IGltcGxlbWVudGVkIikKCgojIENvbnZlbmllbmNlIGZ1bmN0aW9uIGZvciBxdWljayB1c2FnZQphc3luYyBkZWYgc2VhcmNoX2ZsaWdodHMob3JpZ2luOiBzdHIsIGRlc3RpbmF0aW9uOiBzdHIsIGRhdGU6IHN0cikgLT4gTGlzdFtEaWN0W3N0ciwgQW55XV06CiAgICAiIiIKICAgIFF1aWNrIHNlYXJjaCBmdW5jdGlvbiB3aXRob3V0IGluaXRpYWxpemluZyBwcm92aWRlci4KICAgIAogICAgQXJnczoKICAgICAgICBvcmlnaW46IE9yaWdpbiBjaXR5IGNvZGUKICAgICAgICBkZXN0aW5hdGlvbjogRGVzdGluYXRpb24gY2l0eSBjb2RlCiAgICAgICAgZGF0ZTogRGVwYXJ0dXJlIGRhdGUgKFlZWVktTU0tREQpCiAgICAKICAgIFJldHVybnM6CiAgICAgICAgTGlzdCBvZiBmbGlnaHQgcmVzdWx0cwogICAgIiIiCiAgICBhc3luYyB3aXRoIEN0cmlwUHJvdmlkZXIoKSBhcyBwcm92aWRlcjoKICAgICAgICByZXR1cm4gYXdhaXQgcHJvdmlkZXIuc2VhcmNoX2ZsaWdodHMob3JpZ2luLCBkZXN0aW5hdGlvbiwgZGF0ZSkK
+"""
+Ctrip (携程) Provider
+
+Provides flight and hotel search capabilities for Ctrip.com
+"""
+
+import asyncio
+from datetime import datetime
+from typing import List, Dict, Any, Optional
+from core.base import BaseProvider
+
+
+class CtripProvider(BaseProvider):
+    """
+    Ctrip API Provider
+    
+    Features:
+    - Flight search
+    - Hotel search (planned)
+    
+    Limitations:
+    - No booking capability (read-only)
+    - May require handling anti-bot measures
+    """
+    
+    name = "ctrip"
+    version = "1.0.0"
+    author = "@DayDreammy"
+    required_config = []  # No login required for search
+    
+    BASE_URL = "https://www.ctrip.com"
+    FLIGHT_SEARCH_URL = "https://flights.ctrip.com/online/channel/domestic"
+    
+    def __init__(self, config: Optional[Dict[str, Any]] = None):
+        super().__init__(config)
+        self._playwright = None
+        self._browser = None
+        self._page = None
+    
+    async def _init_browser(self):
+        """Initialize browser if not already done."""
+        if self._page is None:
+            from playwright.async_api import async_playwright
+            
+            self._playwright = await async_playwright().start()
+            self._browser = await self._playwright.chromium.launch(
+                headless=True,
+                args=['--no-sandbox', '--disable-dev-shm-usage']
+            )
+            self._page = await self._browser.new_page()
+            await self._page.set_viewport_size({"width": 1920, "height": 1080})
+    
+    async def close(self):
+        """Clean up browser resources."""
+        if self._page:
+            await self._page.close()
+        if self._browser:
+            await self._browser.close()
+        if self._playwright:
+            await self._playwright.stop()
+    
+    async def health_check(self) -> bool:
+        """Check if Ctrip is accessible."""
+        try:
+            await self._init_browser()
+            await self._page.goto(self.BASE_URL, wait_until="networkidle")
+            return "ctrip" in await self._page.title().lower()
+        except Exception:
+            return False
+    
+    async def search_flights(
+        self,
+        origin: str,
+        destination: str,
+        date: str,
+        **kwargs
+    ) -> List[Dict[str, Any]]:
+        """
+        Search for flights on Ctrip.
+        
+        Args:
+            origin: Origin city code (e.g., "SHA" for Shanghai)
+            destination: Destination city code (e.g., "PEK" for Beijing)
+            date: Departure date in YYYY-MM-DD format
+            **kwargs: Additional search parameters
+                - adult: Number of adults (default: 1)
+                - child: Number of children (default: 0)
+        
+        Returns:
+            List of flight dictionaries containing:
+            - airline: Airline name
+            - flight_no: Flight number
+            - dep_time: Departure time
+            - arr_time: Arrival time
+            - dep_airport: Departure airport
+            - arr_airport: Arrival airport
+            - price: Price in CNY
+            - duration: Flight duration
+        
+        Example:
+            >>> provider = CtripProvider()
+            >>> flights = await provider.search_flights("SHA", "PEK", "2026-03-01")
+            >>> print(flights[0])
+            {
+                'airline': 'China Eastern',
+                'flight_no': 'MU5101',
+                'dep_time': '08:00',
+                'arr_time': '10:15',
+                'dep_airport': 'SHA',
+                'arr_airport': 'PEK',
+                'price': 850,
+                'duration': '2h 15m'
+            }
+        """
+        await self._init_browser()
+        
+        # Format date for Ctrip URL
+        date_obj = datetime.strptime(date, "%Y-%m-%d")
+        date_str = date_obj.strftime("%Y-%m-%d")
+        
+        # Build search URL
+        search_url = (
+            f"{self.FLIGHT_SEARCH_URL}?"
+            f"dep={origin}&arr={destination}&depDate={date_str}"
+        )
+        
+        try:
+            # Navigate to search page
+            await self._page.goto(search_url, wait_until="networkidle")
+            
+            # Wait for flight results to load
+            await self._page.wait_for_selector(".flight-item", timeout=30000)
+            
+            # Extract flight data
+            flights = await self._page.evaluate("""
+                () => {
+                    const flights = [];
+                    const items = document.querySelectorAll('.flight-item');
+                    items.forEach(item => {
+                        const airline = item.querySelector('.airline-name')?.textContent?.trim();
+                        const flightNo = item.querySelector('.flight-no')?.textContent?.trim();
+                        const depTime = item.querySelector('.dep-time')?.textContent?.trim();
+                        const arrTime = item.querySelector('.arr-time')?.textContent?.trim();
+                        const depAirport = item.querySelector('.dep-airport')?.textContent?.trim();
+                        const arrAirport = item.querySelector('.arr-airport')?.textContent?.trim();
+                        const priceText = item.querySelector('.price')?.textContent?.trim();
+                        const duration = item.querySelector('.duration')?.textContent?.trim();
+                        
+                        if (airline && flightNo) {
+                            flights.push({
+                                airline,
+                                flight_no: flightNo,
+                                dep_time: depTime,
+                                arr_time: arrTime,
+                                dep_airport: depAirport,
+                                arr_airport: arrAirport,
+                                price: parseInt(priceText?.replace(/[^0-9]/g, '') || 0),
+                                duration
+                            });
+                        }
+                    });
+                    return flights;
+                }
+            """)
+            
+            return flights
+            
+        except Exception as e:
+            # Take screenshot for debugging
+            await self._page.screenshot(path=f"ctrip_error_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+            raise Exception(f"Failed to search flights: {str(e)}")
+    
+    async def search_hotels(
+        self,
+        city: str,
+        checkin: str,
+        checkout: str,
+        **kwargs
+    ) -> List[Dict[str, Any]]:
+        """
+        Search for hotels on Ctrip. (Planned feature)
+        
+        Args:
+            city: City name or code
+            checkin: Check-in date (YYYY-MM-DD)
+            checkout: Check-out date (YYYY-MM-DD)
+        
+        Returns:
+            List of hotel dictionaries
+        """
+        raise NotImplementedError("Hotel search is planned but not yet implemented")
+
+
+# Convenience function for quick usage
+async def search_flights(origin: str, destination: str, date: str) -> List[Dict[str, Any]]:
+    """
+    Quick search function without initializing provider.
+    
+    Args:
+        origin: Origin city code
+        destination: Destination city code
+        date: Departure date (YYYY-MM-DD)
+    
+    Returns:
+        List of flight results
+    """
+    async with CtripProvider() as provider:
+        return await provider.search_flights(origin, destination, date)

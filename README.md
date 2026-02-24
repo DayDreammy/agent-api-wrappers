@@ -34,8 +34,8 @@ cd agent-api-wrappers
 # 安装依赖
 pip install -r requirements.txt
 
-# 查看示例
-python examples/ctrip_flight_search.py
+# 查看模板
+ls providers/template/
 ```
 
 ---
@@ -45,10 +45,8 @@ python examples/ctrip_flight_search.py
 ```
 agent-api-wrappers/
 ├── providers/              # 各网站/APP的封装方案
-│   ├── ctrip/             # 携程
-│   ├── 12306/             # 铁路12306
-│   ├── taobao/            # 淘宝
-│   └── template/          # 新增provider的模板
+│   ├── ctrip/             # 携程 (🚧 待实现)
+│   ├── template/          # ⭐ 新增provider的模板
 ├── docs/                   # 文档
 │   ├── architecture.md    # 架构设计
 │   ├── contribution.md    # 贡献指南
@@ -56,9 +54,7 @@ agent-api-wrappers/
 ├── examples/               # 使用示例
 ├── tests/                  # 测试用例
 ├── core/                   # 核心框架
-│   ├── browser.py         # 浏览器封装
-│   ├── captcha.py         # 验证码处理
-│   └── proxy.py           # 代理管理
+│   ├── base.py           # BaseProvider基类
 └── README.md
 ```
 
@@ -73,73 +69,41 @@ agent-api-wrappers/
 ```python
 from core import BaseProvider
 
-class CtripProvider(BaseProvider):
-    """携程Provider示例"""
+class ExampleProvider(BaseProvider):
+    """示例 Provider"""
     
-    name = "ctrip"
+    name = "example"
     version = "1.0.0"
     
-    async def search_flights(self, origin, dest, date, **kwargs):
-        """搜索航班"""
+    async def search(self, query, **kwargs):
+        """搜索功能"""
         # 1. 打开页面
         # 2. 填写表单
         # 3. 获取结果
         # 4. 返回结构化数据
         pass
-    
-    async def book_flight(self, flight_id, passenger_info):
-        """预订航班"""
-        pass
 ```
 
-### 分层架构
-
-```
-┌─────────────────────────────────────┐
-│           Agent / 上层应用            │
-└─────────────┬───────────────────────┘
-│             │ REST API / Python SDK
-├─────────────▼───────────────────────┤
-│      Provider Registry              │
-│      (统一接口、路由分发)              │
-├─────────────┬───────────────────────┤
-│             │ Provider API
-├─────────────▼───────────────────────┤
-│  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐   │
-│  │携程  │ │12306│ │淘宝  │ │其他  │  │
-│  │Ctrip│ │     │ │     │ │     │  │
-│  └──┬──┘ └──┬──┘ └──┬──┘ └──┬──┘   │
-│     └───────┴───────┴───────┘      │
-│        Provider 层                  │
-├─────────────────────────────────────┤
-│  ┌─────────────────────────────┐   │
-│  │    Browser Automation       │   │
-│  │  (Playwright / Selenium)    │   │
-│  └─────────────────────────────┘   │
-├─────────────────────────────────────┤
-│  ┌─────────┐ ┌─────────┐           │
-│  │ Captcha │ │ Proxy   │           │
-│  │ Solver  │ │ Pool    │           │
-│  └─────────┘ └─────────┘           │
-└─────────────────────────────────────┘
-```
+完整架构图见 [docs/architecture.md](./docs/architecture.md)
 
 ---
 
-## 🛠️ 已支持的Provider
+## 🛠️ Provider 状态
 
 | 平台 | 功能 | 状态 | 贡献者 |
 |------|------|------|--------|
-| 携程 (Ctrip) | 机票搜索 | ✅ 可用 | @DayDreammy |
-| 携程 (Ctrip) | 酒店搜索 | 🚧 开发中 | - |
+| 携程 (Ctrip) | 机票搜索 | 🚧 待实现 | 招募中 |
+| 携程 (Ctrip) | 酒店搜索 | 🚧 待实现 | 招募中 |
 | 12306 | 火车票查询 | 📋 计划中 | - |
 | 淘宝 | 商品搜索 | 📋 计划中 | - |
+
+**想成为第一个贡献者？** 查看 [providers/template/](./providers/template/)
 
 ---
 
 ## 🤝 如何贡献
 
-### 贡献一个新的Provider
+### 贡献一个新的 Provider
 
 1. **Fork 仓库**
 
@@ -148,84 +112,48 @@ class CtripProvider(BaseProvider):
    cp -r providers/template providers/your_provider
    ```
 
-3. **实现核心接口**
+3. **实现并测试**
    - 继承 `BaseProvider`
    - 实现必要的方法
+   - **⚠️ 必须实际测试通过**
    - 添加测试用例
 
-4. **提交PR**
+4. **提交 PR**
    - 描述你解决的问题
    - 提供使用示例
+   - 附上测试结果
    - 说明已知限制
 
-### Provider开发规范
+### ⚠️ 重要：代码质量要求
 
-```python
-# providers/example/provider.py
+**未经测试的代码不要上传**
 
-class ExampleProvider(BaseProvider):
-    """
-    示例Provider
-    
-    功能：XXX网站的XXX功能
-    限制：需要登录、有验证码等
-    """
-    
-    name = "example"
-    version = "1.0.0"
-    author = "@your_github"
-    
-    # 必要配置
-    required_config = ["username", "password"]  # 如果需要登录
-    
-    async def login(self, username, password):
-        """登录（如果需要）"""
-        pass
-    
-    async def search(self, query, **kwargs):
-        """
-        搜索功能
-        
-        Returns:
-            List[Dict]: 结构化结果
-        """
-        pass
-```
+- 不要猜测 CSS 选择器，必须实际抓取验证
+- 不要假设 API 响应格式，必须真实调用确认
+- 每个 Provider 提交前必须能在本地跑通
 
-### 文档要求
-
-每个Provider需要包含：
-- `README.md`: 功能说明、使用方法、注意事项
-- `requirements.txt`: 依赖
-- `examples/`: 使用示例
-- `tests/`: 单元测试
+完整规范见 [docs/contribution.md](./docs/contribution.md)
 
 ---
 
-## 📖 示例：携程机票搜索
+## 📖 示例
 
 ```python
 import asyncio
-from providers.ctrip import CtripProvider
+from core import BaseProvider
+
+# 这是一个示例框架
+# 实际使用请参考具体 Provider 的文档
+
+class MyProvider(BaseProvider):
+    async def search(self, query):
+        # 你的实现
+        pass
 
 async def main():
-    # 初始化Provider
-    ctrip = CtripProvider()
-    
-    # 搜索航班
-    flights = await ctrip.search_flights(
-        origin="SHA",        # 上海
-        destination="PEK",   # 北京
-        date="2026-03-01"
-    )
-    
-    # 打印结果
-    for flight in flights:
-        print(f"{flight[airline]} {flight[flight_no]}")
-        print(f"  出发: {flight[dep_time]}")
-        print(f"  到达: {flight[arr_time]}")
-        print(f"  价格: ¥{flight[price]}")
-        print()
+    async with MyProvider() as provider:
+        results = await provider.search("query")
+        print(results)
 
 asyncio.run(main())
 ```
@@ -237,21 +165,19 @@ asyncio.run(main())
 ### Phase 1: 基础设施 (进行中)
 - [x] 项目初始化
 - [x] 核心框架设计
-- [x] 携程机票Provider
-- [ ] 12306火车票Provider
+- [ ] 第一个可用 Provider
 - [ ] 验证码处理模块
 
 ### Phase 2: 生态建设
-- [ ] Provider注册中心
-- [ ] REST API服务
-- [ ] SDK发布 (Python/Node.js)
+- [ ] Provider 注册中心
+- [ ] REST API 服务
+- [ ] SDK 发布 (Python/Node.js)
 - [ ] 文档网站
 
 ### Phase 3: 规模化
 - [ ] 社区贡献指南完善
 - [ ] 自动化测试体系
-- [ ] 云服务托管
-- [ ] 更多Provider覆盖
+- [ ] 更多 Provider 覆盖
 
 ---
 
@@ -269,7 +195,7 @@ asyncio.run(main())
 
 - **Issues**: 提出需求或报告问题
 - **Discussions**: 技术讨论和想法交流
-- **PR**: 贡献你的Provider
+- **PR**: 贡献你的 Provider
 
 ---
 

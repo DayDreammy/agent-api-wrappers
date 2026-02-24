@@ -1,1 +1,281 @@
-IyBBZ2VudCBBUEkgV3JhcHBlcnMKCj4gVHJhbnNmb3JtIHdlYnNpdGVzIGFuZCBhcHBzIGludG8gQVBJcyBmb3IgQUkgQWdlbnRzCgpb5Lit5paHIFJFQURNRV0oLi9SRUFETUUubWQpCgotLS1uCiMjIPCfjJ8gVmlzaW9uCgoqKkluIDEwIHllYXJzLCA4MCUgb2YgbW9iaWxlIGFwcHMgd2lsbCBkaXNhcHBlYXIuIFRoZXkgb25seSBuZWVkIHRvIGV4aXN0IGFzIEFQSXMuKioKCkFzIEFJIEFnZW50cyBiZWNvbWUgdGhlIHByaW1hcnkgaW50ZXJhY3Rpb24gbGF5ZXIsIGh1bWFucyB3b24ndCBtYW51YWxseSB0YXAgdGhyb3VnaCBhcHBzIGFueW1vcmUuIEluc3RlYWQsIHRoZXknbGwgc2ltcGx5IHRlbGwgYW4gQWdlbnQgd2hhdCB0byBkbyBpbiBuYXR1cmFsIGxhbmd1YWdlLiBCdXQgaGVyZSdzIHRoZSBwcm9ibGVtIOKAlCAqKnRoZSBjdXJyZW50IGludGVybmV0IGlzbid0IGJ1aWx0IGZvciBBZ2VudHMqKi4KCi0gV2FudCB0byBib29rIGEgZmxpZ2h0PyBObyB1bmlmaWVkIEFQSSBmb3IgdHJhaW4gb3IgcGxhbmUgdGlja2V0cwotIFdhbnQgdG8gc2hvcD8gRXZlcnkgZS1jb21tZXJjZSBwbGF0Zm9ybSBoYXMgaXRzIG93biBjbG9zZWQgZWNvc3lzdGVtCi0gV2FudCB0byBmZXRjaCBpbmZvcm1hdGlvbj8gV2Vic2l0ZXMgdGhyb3cgY2FwdGNoYXMsIGFudGktYm90IG1lYXN1cmVzLCBhbmQgZHluYW1pYyBsb2FkaW5nIGF0IHlvdQotIFdhbnQgdG8gYXV0b21hdGU/IEV2ZXJ5IHdlYnNpdGUgcmVxdWlyZXMgd3JpdGluZyBjdXN0b20gc2NyYXBlcnMgZnJvbSBzY3JhdGNoCgpUaGlzIHByb2plY3QgYWltcyB0byAqKmJ1aWxkIGFuIG9wZW4sIHN0YW5kYXJkaXplZCBmcmFtZXdvcmsgZm9yIHdlYnNpdGUgcmV2ZXJzZSBlbmdpbmVlcmluZyBhbmQgYnJvd3NlciBhdXRvbWF0aW9uKiosIGVuYWJsaW5nIGRldmVsb3BlcnMgdG86CgoxLiBRdWlja2x5IHdyYXAgYW55IHdlYnNpdGUgaW50byBhIHN0cnVjdHVyZWQgQVBJCjIuIFJldXNlIGNvbW11bml0eS1jb250cmlidXRlZCBzb2x1dGlvbnMKMy4gUHJvdmlkZSByZWxpYWJsZSwgdW5pZmllZCBzZXJ2aWNlIGludGVyZmFjZXMgZm9yIEFJIEFnZW50cwoKLS0tCgojIyDwn5qAIFF1aWNrIFN0YXJ0CgpgYGBiYXNoCiMgQ2xvbmUgdGhlIHJlcG9zaXRvcnkKZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9EYXlEcmVhbW15L2FnZW50LWFwaS13cmFwcGVycy5naXQKY2QgYWdlbnQtYXBpLXdyYXBwZXJzCgojIEluc3RhbGwgZGVwZW5kZW5jaWVzCnBpcCBpbnN0YWxsIC1yIHJlcXVpcmVtZW50cy50eHQKCiMgUnVuIGV4YW1wbGVzCnB5dGhvbiBleGFtcGxlcy9jdHJpcF9mbGlnaHRfc2VhcmNoLnB5CmBgYAoKLS0tCgojIyDwn5OBIFByb2plY3QgU3RydWN0dXJlCgpgYGAKYWdlbnQtYXBpLXdyYXBwZXJzLwrilJzilIDilIAgcHJvdmlkZXJzLyAgICAgICAgICAgICAgIyBXcmFwcGVycyBmb3IgdmFyaW91cyB3ZWJzaXRlcy9hcHBzCuKUgiAgIOKUnOKUgOKUgCBjdHJpcC8gICAgICAgICAgICAgIyBDdHJpcCAo5pC656iLKQrilIIgICDilJzilIDilIAgMTIzMDYvICAgICAgICAgICAgICMgUmFpbHdheSAxMjMwNgrilIIgICDilJzilIDilIAgdGFvYmFvLyAgICAgICAgICAgICMgVGFvYmFvCuKUgiAgIOKUlOKUgOKUgCB0ZW1wbGF0ZS8gICAgICAgICAgIyBUZW1wbGF0ZSBmb3IgbmV3IHByb3ZpZGVycwrilJzilIDilIAgZG9jcy8gICAgICAgICAgICAgICAgICAgIyBEb2N1bWVudGF0aW9uCuKUgiAgIOKUnOKUgOKUgCBhcmNoaXRlY3R1cmUubWQgICAgIyBBcmNoaXRlY3R1cmUgZGVzaWduCuKUgiAgIOKUnOKUgOKUgCBjb250cmlidXRpb24ubWQgICAgIyBDb250cmlidXRpb24gZ3VpZGUK4pSCICAg4pSU4pSA4pSAIGJlc3QtcHJhY3RpY2VzLm1kICAjIEJlc3QgcHJhY3RpY2VzCuKUnOKUgOKUgCBleGFtcGxlcy8gICAgICAgICAgICAgICAjIFVzYWdlIGV4YW1wbGVzCuKUnOKUgOKUgCB0ZXN0cy8gICAgICAgICAgICAgICAgICAjIFRlc3QgY2FzZXMK4pSc4pSA4pSAIGNvcmUvICAgICAgICAgICAgICAgICAgICMgQ29yZSBmcmFtZXdvcmsK4pSCICAg4pSc4pSA4pSAIGJyb3dzZXIucHkgICAgICAgICAjIEJyb3dzZXIgYXV0b21hdGlvbgrilIIgICDilJzilIDilIAgY2FwdGNoYS5weSAgICAgICAgICMgQ2FwdGNoYSBoYW5kbGluZwrilIIgICDilJTilIDilIAgcHJveHkucHkgICAgICAgICAgICMgUHJveHkgbWFuYWdlbWVudArilJTilIDilIAgUkVBRE1FLm1kCmBgYAoKLS0tCgojIyDwn4+X77iPIEFyY2hpdGVjdHVyZQoKIyMjIENvcmUgUGhpbG9zb3BoeQoKRWFjaCB3ZWJzaXRlIHdyYXBwZXIgKFByb3ZpZGVyKSBmb2xsb3dzIGEgdW5pZmllZCBpbnRlcmZhY2U6CgpgYGBweXRob24KZnJvbSBjb3JlIGltcG9ydCBCYXNlUHJvdmlkZXIKCmNsYXNzIEN0cmlwUHJvdmlkZXIoQmFzZVByb3ZpZGVyKToKICAgICIiIkV4YW1wbGUgQ3RyaXAgUHJvdmlkZXIiIiIKICAgIAogICAgbmFtZSA9ICJjdHJpcCIKICAgIHZlcnNpb24gPSAiMS4wLjAiCiAgICAKICAgIGFzeW5jIGRlZiBzZWFyY2hfZmxpZ2h0cyhzZWxmLCBvcmlnaW4sIGRlc3QsIGRhdGUsICoqa3dhcmdzKToKICAgICAgICAiIiJTZWFyY2ggZm9yIGZsaWdodHMiIiIKICAgICAgICAjIDEuIE9wZW4gcGFnZQogICAgICAgICMgMi4gRmlsbCBmb3JtCiAgICAgICAgIyAzLiBHZXQgcmVzdWx0cwogICAgICAgICMgNC4gUmV0dXJuIHN0cnVjdHVyZWQgZGF0YQogICAgICAgIHBhc3MKICAgIAogICAgYXN5bmMgZGVmIGJvb2tfZmxpZ2h0KHNlbGYsIGZsaWdodF9pZCwgcGFzc2VuZ2VyX2luZm8pOgogICAgICAgICIiIkJvb2sgYSBmbGlnaHQiIiIKICAgICAgICBwYXNzCmBgYAoKIyMjIExheWVyZWQgQXJjaGl0ZWN0dXJlCgpgYGAK4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQCuKUgiAgICAgICAgICAgQWdlbnQgLyBBcHBsaWNhdGlvbnMgICAgICAg4pSCCuKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUrOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmArilIIgICAgICAgICAgICAg4pSCIFJFU1QgQVBJIC8gUHl0aG9uIFNESwrilJzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilrzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKQK4pSCICAgICAgUHJvdmlkZXIgUmVnaXN0cnkgICAgICAgICAgICAgIOKUggrilIIgICAgICAoVW5pZmllZCBpbnRlcmZhY2UgJiByb3V0aW5nKSAgIOKUggrilJzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKQK4pSCICAgICAgICAgICAgIOKUgiBQcm92aWRlciBBUEkK4pSc4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pa84pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSkCuKUgiAg4pSM4pSA4pSA4pSA4pSA4pSA4pSQIOKUjOKUgOKUgOKUgOKUgOKUgOKUkCDilIzilIDilIDilIDilIDilIDilJAg4pSM4pSA4pSA4pSA4pSA4pSA4pSQICAg4pSCCuKUgiAg4pSCQ3RyaXDilIIg4pSCMTIzMDbilIIg4pSCVGFvYmFv4pSCIOKUgk90aGVyc+KUgiDilIIK4pSCICDilJTilIDilIDilKzilIDilIDilJgg4pSU4pSA4pSA4pSs4pSA4pSA4pSYIOKUlOKUgOKUgOKUrOKUgOKUgOKUmCDilJTilIDilIDilKzilIDilIDilJggICDilIIK4pSCICAgICDilJTilIDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilJggICAgICDilIIK4pSCICAgICAgICBQcm92aWRlciBMYXllciAgICAgICAgICAgICAgIOKUggrilJzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKQK4pSCICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAgICDilIIK4pSCICDilIIgICAgQnJvd3NlciBBdXRvbWF0aW9uICAgICAgIOKUgiAgIOKUggrilIIgIOKUgiAgKFBsYXl3cmlnaHQgLyBTZWxlbml1bSkgICAg4pSCICAg4pSCCuKUgiAg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYICAg4pSCCuKUnOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUpArilIIgIOKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkCDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAgICAgICAgICAgIOKUggrilIIgIOKUgiBDYXB0Y2hhIOKUgiDilIIgUHJveHkgICDilIIgICAgICAgICAgIOKUggrilIIgIOKUgiBTb2x2ZXIgIOKUgiDilIIgUG9vbCAgICDilIIgICAgICAgICAgIOKUggrilIIgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmCDilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilJggICAgICAgICAgIOKUggrilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgKYGBgCgotLS0KCiMjIPCfm6DvuI8gU3VwcG9ydGVkIFByb3ZpZGVycwoKfCBQbGF0Zm9ybSB8IEZlYXR1cmUgfCBTdGF0dXMgfCBDb250cmlidXRvciB8CnwtLS0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IEN0cmlwICjmkLrnqIspIHwgRmxpZ2h0IHNlYXJjaCB8IOKchSBBdmFpbGFibGUgfCBARGF5RHJlYW1teSB8CnwgQ3RyaXAgKOaQuueoiykgfCBIb3RlbCBzZWFyY2ggfCDwn5qnIEluIHByb2dyZXNzIHwgLSB8CnwgMTIzMDYgfCBUcmFpbiB0aWNrZXQgcXVlcnkgfCDwn5OLIFBsYW5uZWQgfCAtIHwKfCBUYW9iYW8gfCBQcm9kdWN0IHNlYXJjaCB8IPCfk4sgUGxhbm5lZCB8IC0gfAoKLS0tCgojIyDwn6SdIEhvdyB0byBDb250cmlidXRlCgojIyMgQ29udHJpYnV0aW5nIGEgTmV3IFByb3ZpZGVyCgoxLiAqKkZvcmsgdGhlIHJlcG9zaXRvcnkqKgoKMi4gKipDb3B5IHRoZSB0ZW1wbGF0ZSoqCiAgIGBgYGJhc2gKICAgY3AgLXIgcHJvdmlkZXJzL3RlbXBsYXRlIHByb3ZpZGVycy95b3VyX3Byb3ZpZGVyCiAgIGBgYAoKMy4gKipJbXBsZW1lbnQgY29yZSBpbnRlcmZhY2VzKioKICAgLSBJbmhlcml0IGZyb20gYEJhc2VQcm92aWRlcmAKICAgLSBJbXBsZW1lbnQgcmVxdWlyZWQgbWV0aG9kcwogICAtIEFkZCB0ZXN0IGNhc2VzCgo0LiAqKlN1Ym1pdCBhIFBSKioKICAgLSBEZXNjcmliZSB0aGUgcHJvYmxlbSB5b3UncmUgc29sdmluZwogICAtIFByb3ZpZGUgdXNhZ2UgZXhhbXBsZXMKICAgLSBEb2N1bWVudCBrbm93biBsaW1pdGF0aW9ucwoKIyMjIFByb3ZpZGVyIERldmVsb3BtZW50IEd1aWRlbGluZXMKCmBgYHB5dGhvbgojIHByb3ZpZGVycy9leGFtcGxlL3Byb3ZpZGVyLnB5CgpjbGFzcyBFeGFtcGxlUHJvdmlkZXIoQmFzZVByb3ZpZGVyKToKICAgICIiIgogICAgRXhhbXBsZSBQcm92aWRlcgogICAgCiAgICBGdW5jdGlvbmFsaXR5OiBYWFggZmVhdHVyZSBmb3IgWFhYIHdlYnNpdGUKICAgIExpbWl0YXRpb25zOiBSZXF1aXJlcyBsb2dpbiwgaGFzIGNhcHRjaGEsIGV0Yy4KICAgICIiIgogICAgCiAgICBuYW1lID0gImV4YW1wbGUiCiAgICB2ZXJzaW9uID0gIjEuMC4wIgogICAgYXV0aG9yID0gIkB5b3VyX2dpdGh1YiIKICAgIAogICAgIyBSZXF1aXJlZCBjb25maWd1cmF0aW9uCiAgICByZXF1aXJlZF9jb25maWcgPSBbInVzZXJuYW1lIiwgInBhc3N3b3JkIl0gICMgSWYgbG9naW4gbmVlZGVkCiAgICAKICAgIGFzeW5jIGRlZiBsb2dpbihzZWxmLCB1c2VybmFtZSwgcGFzc3dvcmQpOgogICAgICAgICIiIkxvZ2luIChpZiByZXF1aXJlZCkiIiIKICAgICAgICBwYXNzCiAgICAKICAgIGFzeW5jIGRlZiBzZWFyY2goc2VsZiwgcXVlcnksICoqa3dhcmdzKToKICAgICAgICAiIiIKICAgICAgICBTZWFyY2ggZnVuY3Rpb25hbGl0eQogICAgICAgIAogICAgICAgIFJldHVybnM6CiAgICAgICAgICAgIExpc3RbRGljdF06IFN0cnVjdHVyZWQgcmVzdWx0cwogICAgICAgICIiIgogICAgICAgIHBhc3MKYGBgCgojIyMgRG9jdW1lbnRhdGlvbiBSZXF1aXJlbWVudHMKCkVhY2ggUHJvdmlkZXIgbXVzdCBpbmNsdWRlOgotIGBSRUFETUUubWRgOiBGZWF0dXJlIGRlc2NyaXB0aW9uLCB1c2FnZSwgY2F2ZWF0cwotIGByZXF1aXJlbWVudHMudHh0YDogRGVwZW5kZW5jaWVzCi0gYGV4YW1wbGVzL2A6IFVzYWdlIGV4YW1wbGVzCi0gYHRlc3RzL2A6IFVuaXQgdGVzdHMKCi0tLQoKIyMg8J+TliBFeGFtcGxlOiBDdHJpcCBGbGlnaHQgU2VhcmNoCgpgYGBweXRob24KaW1wb3J0IGFzeW5jaW8KZnJvbSBwcm92aWRlcnMuY3RyaXAgaW1wb3J0IEN0cmlwUHJvdmlkZXIKCmFzeW5jIGRlZiBtYWluKCk6CiAgICAjIEluaXRpYWxpemUgUHJvdmlkZXIKICAgIGN0cmlwID0gQ3RyaXBQcm92aWRlcigpCiAgICAKICAgICMgU2VhcmNoIGZsaWdodHMKICAgIGZsaWdodHMgPSBhd2FpdCBjdHJpcC5zZWFyY2hfZmxpZ2h0cygKICAgICAgICBvcmlnaW49IlNIQSIsICAgICAgICAjIFNoYW5naGFpCiAgICAgICAgZGVzdGluYXRpb249IlBFSyIsICAgIyBCZWlqaW5nCiAgICAgICAgZGF0ZT0iMjAyNi0wMy0wMSIKICAgICkKICAgIAogICAgIyBQcmludCByZXN1bHRzCiAgICBmb3IgZmxpZ2h0IGluIGZsaWdodHM6CiAgICAgICAgcHJpbnQoZiJ7ZmxpZ2h0WydhaXJsaW5lJ119IHtmbGlnaHRbJ2ZsaWdodF9ubyddfSIpCiAgICAgICAgcHJpbnQoZiIgIERlcGFydHVyZToge2ZsaWdodFsnZGVwX3RpbWUnXX0iKQogICAgICAgIHByaW50KGYiICBBcnJpdmFsOiB7ZmxpZ2h0WydhcnJfdGltZSddfSIpCiAgICAgICAgcHJpbnQoZiIgIFByaWNlOiDCpXtmbGlnaHRbJ3ByaWNlJ119IikKICAgICAgICBwcmludCgpCgphc3luY2lvLnJ1bihtYWluKCkpCmBgYAoKLS0tCgojIyDwn46vIFJvYWRtYXAKCiMjIyBQaGFzZSAxOiBJbmZyYXN0cnVjdHVyZSAoSW4gUHJvZ3Jlc3MpCi0gW3hdIFByb2plY3QgaW5pdGlhbGl6YXRpb24KLSBbeF0gQ29yZSBmcmFtZXdvcmsgZGVzaWduCi0gW3hdIEN0cmlwIGZsaWdodCBQcm92aWRlcgotIFsgXSAxMjMwNiB0cmFpbiB0aWNrZXQgUHJvdmlkZXIKLSBbIF0gQ2FwdGNoYSBoYW5kbGluZyBtb2R1bGUKCiMjIyBQaGFzZSAyOiBFY29zeXN0ZW0gQnVpbGRpbmcKLSBbIF0gUHJvdmlkZXIgcmVnaXN0cnkKLSBbIF0gUkVTVCBBUEkgc2VydmljZQotIFsgXSBTREsgcmVsZWFzZSAoUHl0aG9uL05vZGUuanMpCi0gWyBdIERvY3VtZW50YXRpb24gd2Vic2l0ZQoKIyMjIFBoYXNlIDM6IFNjYWxlCi0gWyBdIENvbW11bml0eSBjb250cmlidXRpb24gZ3VpZGVsaW5lcwotIFsgXSBBdXRvbWF0ZWQgdGVzdGluZyBmcmFtZXdvcmsKLSBbIF0gQ2xvdWQgaG9zdGluZyBzZXJ2aWNlCi0gWyBdIE1vcmUgcHJvdmlkZXIgY292ZXJhZ2UKCi0tLQoKIyMg4pqg77iPIERpc2NsYWltZXIKClRoaXMgcHJvamVjdCBpcyBmb3IgZWR1Y2F0aW9uYWwgYW5kIHJlc2VhcmNoIHB1cnBvc2VzIG9ubHkuIFdoZW4gdXNpbmcgdGhpcyBwcm9qZWN0LCBwbGVhc2UgY29tcGx5IHdpdGg6CjEuIFRlcm1zIG9mIHNlcnZpY2Ugb2YgcmVsZXZhbnQgd2Vic2l0ZXMKMi4gTG9jYWwgbGF3cyBhbmQgcmVndWxhdGlvbnMKMy4gTm8gbGFyZ2Utc2NhbGUgZGF0YSBzY3JhcGluZwo0LiBObyBjb21tZXJjaWFsIGV4cGxvaXRhdGlvbgoKLS0tCgojIyDwn5KsIEpvaW4gdGhlIERpc2N1c3Npb24KCi0gKipJc3N1ZXMqKjogU3VibWl0IGZlYXR1cmUgcmVxdWVzdHMgb3IgYnVnIHJlcG9ydHMKLSAqKkRpc2N1c3Npb25zKio6IFRlY2huaWNhbCBkaXNjdXNzaW9ucyBhbmQgaWRlYSBleGNoYW5nZXMKLSAqKlBScyoqOiBDb250cmlidXRlIHlvdXIgUHJvdmlkZXIKCi0tLQoKIyMg8J+ThCBMaWNlbnNlCgpNSVQgTGljZW5zZSAtIFNlZSBbTElDRU5TRV0oLi9MSUNFTlNFKSBmb3IgZGV0YWlscwoKLS0tCgoqKkxldCdzIGJ1aWxkIHRoZSBpbmZyYXN0cnVjdHVyZSBmb3IgdGhlIEFnZW50IGVyYSB0b2dldGhlciEqKiDwn5qACg==
+# Agent API Wrappers
+
+> Transform websites and apps into APIs for AI Agents
+
+[中文 README](./README.md)
+
+---n
+## 🌟 Vision
+
+**In 10 years, 80% of mobile apps will disappear. They only need to exist as APIs.**
+
+As AI Agents become the primary interaction layer, humans won't manually tap through apps anymore. Instead, they'll simply tell an Agent what to do in natural language. But here's the problem — **the current internet isn't built for Agents**.
+
+- Want to book a flight? No unified API for train or plane tickets
+- Want to shop? Every e-commerce platform has its own closed ecosystem
+- Want to fetch information? Websites throw captchas, anti-bot measures, and dynamic loading at you
+- Want to automate? Every website requires writing custom scrapers from scratch
+
+This project aims to **build an open, standardized framework for website reverse engineering and browser automation**, enabling developers to:
+
+1. Quickly wrap any website into a structured API
+2. Reuse community-contributed solutions
+3. Provide reliable, unified service interfaces for AI Agents
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/DayDreammy/agent-api-wrappers.git
+cd agent-api-wrappers
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run examples
+python examples/ctrip_flight_search.py
+```
+
+---
+
+## 📁 Project Structure
+
+```
+agent-api-wrappers/
+├── providers/              # Wrappers for various websites/apps
+│   ├── ctrip/             # Ctrip (携程)
+│   ├── 12306/             # Railway 12306
+│   ├── taobao/            # Taobao
+│   └── template/          # Template for new providers
+├── docs/                   # Documentation
+│   ├── architecture.md    # Architecture design
+│   ├── contribution.md    # Contribution guide
+│   └── best-practices.md  # Best practices
+├── examples/               # Usage examples
+├── tests/                  # Test cases
+├── core/                   # Core framework
+│   ├── browser.py         # Browser automation
+│   ├── captcha.py         # Captcha handling
+│   └── proxy.py           # Proxy management
+└── README.md
+```
+
+---
+
+## 🏗️ Architecture
+
+### Core Philosophy
+
+Each website wrapper (Provider) follows a unified interface:
+
+```python
+from core import BaseProvider
+
+class CtripProvider(BaseProvider):
+    """Example Ctrip Provider"""
+    
+    name = "ctrip"
+    version = "1.0.0"
+    
+    async def search_flights(self, origin, dest, date, **kwargs):
+        """Search for flights"""
+        # 1. Open page
+        # 2. Fill form
+        # 3. Get results
+        # 4. Return structured data
+        pass
+    
+    async def book_flight(self, flight_id, passenger_info):
+        """Book a flight"""
+        pass
+```
+
+### Layered Architecture
+
+```
+┌─────────────────────────────────────┐
+│           Agent / Applications       │
+└─────────────┬───────────────────────┘
+│             │ REST API / Python SDK
+├─────────────▼───────────────────────┤
+│      Provider Registry              │
+│      (Unified interface & routing)   │
+├─────────────┬───────────────────────┤
+│             │ Provider API
+├─────────────▼───────────────────────┤
+│  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐   │
+│  │Ctrip│ │12306│ │Taobao│ │Others│ │
+│  └──┬──┘ └──┬──┘ └──┬──┘ └──┬──┘   │
+│     └───────┴───────┴───────┘      │
+│        Provider Layer               │
+├─────────────────────────────────────┤
+│  ┌─────────────────────────────┐   │
+│  │    Browser Automation       │   │
+│  │  (Playwright / Selenium)    │   │
+│  └─────────────────────────────┘   │
+├─────────────────────────────────────┤
+│  ┌─────────┐ ┌─────────┐           │
+│  │ Captcha │ │ Proxy   │           │
+│  │ Solver  │ │ Pool    │           │
+│  └─────────┘ └─────────┘           │
+└─────────────────────────────────────┘
+```
+
+---
+
+## 🛠️ Supported Providers
+
+| Platform | Feature | Status | Contributor |
+|----------|---------|--------|-------------|
+| Ctrip (携程) | Flight search | ✅ Available | @DayDreammy |
+| Ctrip (携程) | Hotel search | 🚧 In progress | - |
+| 12306 | Train ticket query | 📋 Planned | - |
+| Taobao | Product search | 📋 Planned | - |
+
+---
+
+## 🤝 How to Contribute
+
+### Contributing a New Provider
+
+1. **Fork the repository**
+
+2. **Copy the template**
+   ```bash
+   cp -r providers/template providers/your_provider
+   ```
+
+3. **Implement core interfaces**
+   - Inherit from `BaseProvider`
+   - Implement required methods
+   - Add test cases
+
+4. **Submit a PR**
+   - Describe the problem you're solving
+   - Provide usage examples
+   - Document known limitations
+
+### Provider Development Guidelines
+
+```python
+# providers/example/provider.py
+
+class ExampleProvider(BaseProvider):
+    """
+    Example Provider
+    
+    Functionality: XXX feature for XXX website
+    Limitations: Requires login, has captcha, etc.
+    """
+    
+    name = "example"
+    version = "1.0.0"
+    author = "@your_github"
+    
+    # Required configuration
+    required_config = ["username", "password"]  # If login needed
+    
+    async def login(self, username, password):
+        """Login (if required)"""
+        pass
+    
+    async def search(self, query, **kwargs):
+        """
+        Search functionality
+        
+        Returns:
+            List[Dict]: Structured results
+        """
+        pass
+```
+
+### Documentation Requirements
+
+Each Provider must include:
+- `README.md`: Feature description, usage, caveats
+- `requirements.txt`: Dependencies
+- `examples/`: Usage examples
+- `tests/`: Unit tests
+
+---
+
+## 📖 Example: Ctrip Flight Search
+
+```python
+import asyncio
+from providers.ctrip import CtripProvider
+
+async def main():
+    # Initialize Provider
+    ctrip = CtripProvider()
+    
+    # Search flights
+    flights = await ctrip.search_flights(
+        origin="SHA",        # Shanghai
+        destination="PEK",   # Beijing
+        date="2026-03-01"
+    )
+    
+    # Print results
+    for flight in flights:
+        print(f"{flight['airline']} {flight['flight_no']}")
+        print(f"  Departure: {flight['dep_time']}")
+        print(f"  Arrival: {flight['arr_time']}")
+        print(f"  Price: ¥{flight['price']}")
+        print()
+
+asyncio.run(main())
+```
+
+---
+
+## 🎯 Roadmap
+
+### Phase 1: Infrastructure (In Progress)
+- [x] Project initialization
+- [x] Core framework design
+- [x] Ctrip flight Provider
+- [ ] 12306 train ticket Provider
+- [ ] Captcha handling module
+
+### Phase 2: Ecosystem Building
+- [ ] Provider registry
+- [ ] REST API service
+- [ ] SDK release (Python/Node.js)
+- [ ] Documentation website
+
+### Phase 3: Scale
+- [ ] Community contribution guidelines
+- [ ] Automated testing framework
+- [ ] Cloud hosting service
+- [ ] More provider coverage
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for educational and research purposes only. When using this project, please comply with:
+1. Terms of service of relevant websites
+2. Local laws and regulations
+3. No large-scale data scraping
+4. No commercial exploitation
+
+---
+
+## 💬 Join the Discussion
+
+- **Issues**: Submit feature requests or bug reports
+- **Discussions**: Technical discussions and idea exchanges
+- **PRs**: Contribute your Provider
+
+---
+
+## 📄 License
+
+MIT License - See [LICENSE](./LICENSE) for details
+
+---
+
+**Let's build the infrastructure for the Agent era together!** 🚀

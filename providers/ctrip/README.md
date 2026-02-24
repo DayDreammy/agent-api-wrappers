@@ -1,53 +1,90 @@
-# Ctrip Provider (携程) - 待实现
+# Ctrip Provider (携程)
 
-⚠️ **状态：尚未实现 (Work in Progress)**
+⚠️ **状态：火车票功能已测试通过 ✅，机票功能待修复 🚧**
 
-我们正在寻找贡献者来实现携程的浏览器自动化封装。
+## 功能
 
-## 计划功能
+- ✅ **火车票搜索** - 已测试，可用
+- 🚧 **机票搜索** - 代码存在，但 API 响应格式已变更，需要修复
 
-- [ ] 机票搜索
-- [ ] 酒店搜索
+## 测试结果
 
-## 为什么还没实现？
+### 火车票 (已验证 ✅)
 
-**原则：未经测试的代码不上传**
+```python
+from ctrip_client import CtripScraper, TrainQuery
 
-之前本仓库包含了一份未经验证的携程代码（猜测了 CSS 选择器但未实际运行测试）。根据社区规范，我们已将其移除。
+scraper = CtripScraper()
+query = TrainQuery(from_station='上海', to_station='杭州', date='2026-02-22')
+result = scraper.search_train(query)
 
-## 如何贡献
+# 结果示例
+{
+    "total": 357,
+    "trains": [
+        {
+            "train_number": "Z4081",
+            "departure_station_name": "上海松江",
+            "arrival_station_name": "杭州南",
+            "departure_time": "01:28",
+            "arrival_time": "02:51",
+            "start_price": 24.5,
+            "seats": [...]
+        }
+    ]
+}
+```
 
-如果你愿意实现这个 Provider：
+### 机票 (待修复 🚧)
 
-1. **Fork 仓库**
+当前问题：携程航班 API 返回 `{'status': 0, 'msg': 'success'}`，但代码预期 `data.flightItineraryList`。
 
-2. **本地开发**
-   ```bash
-   cd providers/ctrip
-   # 参考 providers/template/ 目录
-   ```
+可能原因：
+- API 响应格式已变更
+- 需要额外请求参数
+- 反爬机制
 
-3. **必须实际测试**
-   - 用浏览器访问携程网站
-   - 使用 Playwright/Selenium 实际抓取页面
-   - 验证选择器能正确提取数据
-   - 确保代码能真正运行
+## 安装
 
-4. **提交 PR**
-   - 附上测试结果截图
-   - 说明测试环境（Python 版本、浏览器版本）
+```bash
+pip install playwright
+playwright install chromium
+```
 
-## 参考资源
+## 使用示例
 
-- 携程机票搜索页: https://flights.ctrip.com
-- 模板代码: `providers/template/`
+### 火车票查询
+
+```python
+from ctrip_client import CtripScraper, TrainQuery
+
+scraper = CtripScraper()
+try:
+    query = TrainQuery(
+        from_station='上海',
+        to_station='杭州',
+        date='2026-03-01'
+    )
+    result = scraper.search_train(query)
+    print(f"找到 {result['total']} 趟列车")
+    for train in result['trains'][:5]:
+        print(f"{train['train_number']}: {train['departure_time']} - {train['arrival_time']} ¥{train['start_price']}")
+finally:
+    scraper.close()
+```
+
+## 代码来源
+
+此代码来自 `my-skills` 仓库的 `ctrip-ticket-api` skill，经过实际测试验证。
+
+## 待办
+
+- [ ] 修复机票搜索功能
+- [ ] 添加更多测试用例
+- [ ] 处理验证码/登录场景
 
 ## 注意事项
 
-- 携程可能有反爬机制
-- 页面结构可能变化，需要定期维护
 - 仅供学习研究，请遵守携程服务条款
-
----
-
-**Want to help?** Open an issue or submit a PR!
+- 频繁请求可能导致 IP 被封
+- 页面结构变化会影响选择器有效性

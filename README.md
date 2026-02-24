@@ -32,10 +32,11 @@ git clone https://github.com/DayDreammy/agent-api-wrappers.git
 cd agent-api-wrappers
 
 # 安装依赖
-pip install -r requirements.txt
+pip install playwright
+playwright install chromium
 
-# 查看模板
-ls providers/template/
+# 查看示例
+python examples/ctrip_flight_search.py
 ```
 
 ---
@@ -45,7 +46,7 @@ ls providers/template/
 ```
 agent-api-wrappers/
 ├── providers/              # 各网站/APP的封装方案
-│   ├── ctrip/             # 携程 (🚧 待实现)
+│   ├── ctrip/             # 携程 (火车票✅ 机票🚧)
 │   ├── template/          # ⭐ 新增provider的模板
 ├── docs/                   # 文档
 │   ├── architecture.md    # 架构设计
@@ -90,12 +91,12 @@ class ExampleProvider(BaseProvider):
 
 ## 🛠️ Provider 状态
 
-| 平台 | 功能 | 状态 | 贡献者 |
-|------|------|------|--------|
-| 携程 (Ctrip) | 机票搜索 | 🚧 待实现 | 招募中 |
-| 携程 (Ctrip) | 酒店搜索 | 🚧 待实现 | 招募中 |
-| 12306 | 火车票查询 | 📋 计划中 | - |
-| 淘宝 | 商品搜索 | 📋 计划中 | - |
+| 平台 | 功能 | 状态 | 贡献者 | 测试状态 |
+|------|------|------|--------|----------|
+| 携程 (Ctrip) | 火车票搜索 | ✅ 可用 | @DayDreammy | ✅ 已测试 |
+| 携程 (Ctrip) | 机票搜索 | 🚧 需修复 | @DayDreammy | ❌ API响应变更 |
+| 12306 | 火车票查询 | 📋 计划中 | - | - |
+| 淘宝 | 商品搜索 | 📋 计划中 | - | - |
 
 **想成为第一个贡献者？** 查看 [providers/template/](./providers/template/)
 
@@ -139,23 +140,22 @@ class ExampleProvider(BaseProvider):
 ## 📖 示例
 
 ```python
-import asyncio
-from core import BaseProvider
+from providers.ctrip import CtripScraper, TrainQuery
 
-# 这是一个示例框架
-# 实际使用请参考具体 Provider 的文档
-
-class MyProvider(BaseProvider):
-    async def search(self, query):
-        # 你的实现
-        pass
-
-async def main():
-    async with MyProvider() as provider:
-        results = await provider.search("query")
-        print(results)
-
-asyncio.run(main())
+# 火车票查询示例
+scraper = CtripScraper()
+try:
+    query = TrainQuery(
+        from_station='上海',
+        to_station='杭州',
+        date='2026-03-01'
+    )
+    result = scraper.search_train(query)
+    print(f"找到 {result['total']} 趟列车")
+    for train in result['trains'][:5]:
+        print(f"{train['train_number']}: {train['departure_time']} - ¥{train['start_price']}")
+finally:
+    scraper.close()
 ```
 
 ---
@@ -165,19 +165,22 @@ asyncio.run(main())
 ### Phase 1: 基础设施 (进行中)
 - [x] 项目初始化
 - [x] 核心框架设计
-- [ ] 第一个可用 Provider
+- [x] 携程火车票 Provider (已测试 ✅)
+- [ ] 修复携程机票 Provider
+- [ ] 12306火车票Provider
 - [ ] 验证码处理模块
 
 ### Phase 2: 生态建设
-- [ ] Provider 注册中心
-- [ ] REST API 服务
-- [ ] SDK 发布 (Python/Node.js)
+- [ ] Provider注册中心
+- [ ] REST API服务
+- [ ] SDK发布 (Python/Node.js)
 - [ ] 文档网站
 
 ### Phase 3: 规模化
 - [ ] 社区贡献指南完善
 - [ ] 自动化测试体系
-- [ ] 更多 Provider 覆盖
+- [ ] 云服务托管
+- [ ] 更多Provider覆盖
 
 ---
 
@@ -195,7 +198,7 @@ asyncio.run(main())
 
 - **Issues**: 提出需求或报告问题
 - **Discussions**: 技术讨论和想法交流
-- **PR**: 贡献你的 Provider
+- **PR**: 贡献你的Provider
 
 ---
 

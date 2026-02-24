@@ -1,1 +1,51 @@
-aW1wb3J0IGFzeW5jaW8KaW1wb3J0IHN5cwpzeXMucGF0aC5pbnNlcnQoMCwgJy9ob21lL25vZGUvLm9wZW5jbGF3L3dvcmtzcGFjZS9hZ2VudC1hcGktd3JhcHBlcnMnKQoKZnJvbSBwcm92aWRlcnMuY3RyaXAgaW1wb3J0IEN0cmlwUHJvdmlkZXIKCgphc3luYyBkZWYgc2VhcmNoX2ZsaWdodHNfZXhhbXBsZSgpOgogICAgIiIiCiAgICDnpLrkvovvvJrmkJzntKLkuIrmtbfliLDljJfkuqznmoToiKrnj60KICAgIAogICAg6L+Q6KGM5pa55byPOgogICAgICAgIHB5dGhvbiBleGFtcGxlcy9jdHJpcF9mbGlnaHRfc2VhcmNoLnB5CiAgICAiIiIKICAgIHByaW50KCLwn5SNIOato+WcqOaQnOe0ouiIquePrS4uLiIpCiAgICBwcmludCgiLSIgKiA1MCkKICAgIAogICAgYXN5bmMgd2l0aCBDdHJpcFByb3ZpZGVyKCkgYXMgcHJvdmlkZXI6CiAgICAgICAgIyDmo4Dmn6XmnI3liqHnirbmgIEKICAgICAgICBpc19oZWFsdGh5ID0gYXdhaXQgcHJvdmlkZXIuaGVhbHRoX2NoZWNrKCkKICAgICAgICBwcmludChmIuKchSDmkLrnqIvnvZHnq5nlj6/orr/pl646IHtpc19oZWFsdGh5fSIpCiAgICAgICAgcHJpbnQoKQogICAgICAgIAogICAgICAgICMg5pCc57Si6Iiq54+tCiAgICAgICAgZmxpZ2h0cyA9IGF3YWl0IHByb3ZpZGVyLnNlYXJjaF9mbGlnaHRzKAogICAgICAgICAgICBvcmlnaW49IlNIQSIsICAgICAgICAgICAjIOS4iua1t+iZueahpQogICAgICAgICAgICBkZXN0aW5hdGlvbj0iUEVLIiwgICAgICAjIOWMl+S6rOmmlumDvQogICAgICAgICAgICBkYXRlPSIyMDI2LTAzLTE1IiAgICAgICAjIOWHuuWPkeaXpeacnwogICAgICAgICkKICAgICAgICAKICAgICAgICBwcmludChmIuaJvuWIsCB7bGVuKGZsaWdodHMpfSDkuKroiKrnj606XG4iKQogICAgICAgIAogICAgICAgICMg5pi+56S65YmNMTDkuKrnu5PmnpwKICAgICAgICBmb3IgaSwgZmxpZ2h0IGluIGVudW1lcmF0ZShmbGlnaHRzWzoxMF0sIDEpOgogICAgICAgICAgICBwcmludChmIntpfS4ge2ZsaWdodFsnYWlybGluZSddfSB7ZmxpZ2h0WydmbGlnaHRfbm8nXX0iKQogICAgICAgICAgICBwcmludChmIiAgIOWHuuWPkToge2ZsaWdodFsnZGVwX3RpbWUnXX0ge2ZsaWdodFsnZGVwX2FpcnBvcnQnXX0iKQogICAgICAgICAgICBwcmludChmIiAgIOWIsOi+vjoge2ZsaWdodFsnYXJyX3RpbWUnXX0ge2ZsaWdodFsnYXJyX2FpcnBvcnQnXX0iKQogICAgICAgICAgICBwcmludChmIiAgIOS7t+agvDogwqV7ZmxpZ2h0WydwcmljZSddfSIpCiAgICAgICAgICAgIHByaW50KGYiICAg5pe26ZW/OiB7ZmxpZ2h0WydkdXJhdGlvbiddfSIpCiAgICAgICAgICAgIHByaW50KCkKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgdHJ5OgogICAgICAgIGFzeW5jaW8ucnVuKHNlYXJjaF9mbGlnaHRzX2V4YW1wbGUoKSkKICAgIGV4Y2VwdCBLZXlib2FyZEludGVycnVwdDoKICAgICAgICBwcmludCgiXG5cbueUqOaIt+WPlua2iCIpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgcHJpbnQoZiJcbuKdjCDplJnor686IHtlfSIpCiAgICAgICAgaW1wb3J0IHRyYWNlYmFjawogICAgICAgIHRyYWNlYmFjay5wcmludF9leGMoKQo=
+import asyncio
+import sys
+sys.path.insert(0, '/home/node/.openclaw/workspace/agent-api-wrappers')
+
+from providers.ctrip import CtripProvider
+
+
+async def search_flights_example():
+    """
+    示例：搜索上海到北京的航班
+    
+    运行方式:
+        python examples/ctrip_flight_search.py
+    """
+    print("🔍 正在搜索航班...")
+    print("-" * 50)
+    
+    async with CtripProvider() as provider:
+        # 检查服务状态
+        is_healthy = await provider.health_check()
+        print(f"✅ 携程网站可访问: {is_healthy}")
+        print()
+        
+        # 搜索航班
+        flights = await provider.search_flights(
+            origin="SHA",           # 上海虹桥
+            destination="PEK",      # 北京首都
+            date="2026-03-15"       # 出发日期
+        )
+        
+        print(f"找到 {len(flights)} 个航班:\n")
+        
+        # 显示前10个结果
+        for i, flight in enumerate(flights[:10], 1):
+            print(f"{i}. {flight['airline']} {flight['flight_no']}")
+            print(f"   出发: {flight['dep_time']} {flight['dep_airport']}")
+            print(f"   到达: {flight['arr_time']} {flight['arr_airport']}")
+            print(f"   价格: ¥{flight['price']}")
+            print(f"   时长: {flight['duration']}")
+            print()
+
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(search_flights_example())
+    except KeyboardInterrupt:
+        print("\n\n用户取消")
+    except Exception as e:
+        print(f"\n❌ 错误: {e}")
+        import traceback
+        traceback.print_exc()

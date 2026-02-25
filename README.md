@@ -46,7 +46,7 @@ python examples/ctrip_flight_search.py
 ```
 agent-api-wrappers/
 ├── providers/              # 各网站/APP的封装方案
-│   ├── ctrip/             # 携程 (火车票✅ 机票🚧)
+│   ├── ctrip/             # 携程 (火车票✅ 机票✅)
 │   ├── template/          # ⭐ 新增provider的模板
 ├── docs/                   # 文档
 │   ├── architecture.md    # 架构设计
@@ -94,7 +94,7 @@ class ExampleProvider(BaseProvider):
 | 平台 | 功能 | 状态 | 贡献者 | 测试状态 |
 |------|------|------|--------|----------|
 | 携程 (Ctrip) | 火车票搜索 | ✅ 可用 | @DayDreammy | ✅ 已测试 |
-| 携程 (Ctrip) | 机票搜索 | 🚧 需修复 | @DayDreammy | ❌ API响应变更 |
+| 携程 (Ctrip) | 机票搜索 | ✅ 可用 | @DayDreammy | ✅ 已测试 |
 | 12306 | 火车票查询 | 📋 计划中 | - | - |
 | 淘宝 | 商品搜索 | 📋 计划中 | - | - |
 
@@ -140,9 +140,9 @@ class ExampleProvider(BaseProvider):
 ## 📖 示例
 
 ```python
-from providers.ctrip import CtripScraper, TrainQuery
+from providers.ctrip import CtripScraper, TrainQuery, FlightQuery
 
-# 火车票查询示例
+# 火车票查询
 scraper = CtripScraper()
 try:
     query = TrainQuery(
@@ -156,6 +156,21 @@ try:
         print(f"{train['train_number']}: {train['departure_time']} - ¥{train['start_price']}")
 finally:
     scraper.close()
+
+# 机票查询
+scraper = CtripScraper()
+try:
+    query = FlightQuery(
+        from_code='SHA',
+        to_code='BJS',
+        date='2026-03-01'
+    )
+    result = scraper.search_flight(query)
+    print(f"找到 {result['total']} 个航班")
+    for flight in result['flights'][:5]:
+        print(f"{flight['flight_no']}: {flight['airline_name']} - ¥{flight['lowest_adult_price']}")
+finally:
+    scraper.close()
 ```
 
 ---
@@ -166,7 +181,7 @@ finally:
 - [x] 项目初始化
 - [x] 核心框架设计
 - [x] 携程火车票 Provider (已测试 ✅)
-- [ ] 修复携程机票 Provider
+- [x] 携程机票 Provider (已测试 ✅)
 - [ ] 12306火车票Provider
 - [ ] 验证码处理模块
 

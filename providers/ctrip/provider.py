@@ -125,6 +125,14 @@ class CtripScraper:
 
             response = event.value
             payload = response.json()
+            
+            # Handle invalid date or empty response
+            if "data" not in payload:
+                error_msg = f"API returned no data field. Response: {payload}"
+                if payload.get("status") == 0 and payload.get("msg") == "success":
+                    error_msg += " (Date may be in the past or too far in future)"
+                raise RuntimeError(error_msg)
+            
             data = payload["data"]
             itineraries = data.get("flightItineraryList", [])
             normalized = [self._normalize_flight_itinerary(item) for item in itineraries]
@@ -210,7 +218,12 @@ class CtripScraper:
         if not DATE_PATTERN.match(date_str):
             raise ValueError("date must use YYYY-MM-DD format")
 
-        datetime.strptime(date_str, "%Y-%m-%d")
+        date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+        
+        # Check if date is in the past
+        today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+        if date_obj < today:
+            raise ValueError(f"date {date_str} is in the past. Please use a future date.")
 
     @staticmethod
     def _normalize_city_code(code: str) -> str:
